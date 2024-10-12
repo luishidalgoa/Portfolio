@@ -1,1 +1,31 @@
-<p>experiencia works!</p>
+<div id="experiencia" class="md:w-2/3 pt-24">
+    <text-section-title>Experiencia</text-section-title>
+    <div class="relative mt-5 pb-20 text-left">
+        @for (item of sections; track $index) {
+            <div class="flex items-center relative">
+
+            <div class="border-r-2 border-black dark:border-gray-400 absolute h-full left-1 top-2 z-10">
+                <i class="fas fa-circle text-black dark:text-gray-400 -top-1 -ml-[0.40rem] absolute"></i>
+                @if ($index == sections.length - 1) {
+                    <i class="fas fa-circle bottom-0 text-black dark:text-gray-400 -ml-[0.40rem] absolute"></i>
+                }
+            </div>
+
+            <div class="ml-10 dark:text-white">
+                <div class="font-bold dark:text-white">{{item.puesto}}</div>
+                <div class="italic md:mb-4 dark:text-[#D0B8A8] flex gap-4 items-center"><img class="w-10 h-10 rounded-full object-cover" [src]="item.companyLogo" alt="logo empresa" srcset=""> {{item.company}}</div>
+                <div class="mb-4 mt-2">
+                    <!--extraemos el año y el mes en abri. Jun. con una pipe-->
+                    @if (item.startDate.getFullYear() == item.endDate.getFullYear()) {
+                        <div class="font-bold dark:text-blue-500">{{item.startDate | date:'yyyy MMM' }} - {{item.endDate | date:'MMM'}}</div>
+                    }@else {
+                        <div class="font-bold dark:text-blue-500">{{item.startDate | date:'yyyy MMM' }} - {{item.endDate | date:'yyyy MMM'}}</div>
+                    }
+                </div>
+                <div class="mb-10 dark:text-gray-400">{{item.description}}</div>
+            </div>
+        </div>
+        }
+        
+    </div>
+</div>

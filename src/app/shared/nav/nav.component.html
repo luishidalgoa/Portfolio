@@ -33,9 +33,13 @@
             <div
                 class="bg-slate-800/20 hover:bg-slate-800/20 dark:bg-slate-500/40 dark:hover:bg-slate-500/20 rounded-md">
                 <button
-                    class="text-[#020617] dark:text-white flex items-center  rounded-md px-2 max-w-[32px] font-medium focus:outline-none"
+                    class="text-[#020617] dark:text-white flex items-center justify-center rounded-md px-2 dark:px-1 w-[29.5px] max-w-[29.5px] font-medium focus:outline-none"
                     (click)="toggleTheme()">
-                    <i class="fa-solid fa-moon text-lg"></i>
+                    @if (this.darkMode) {
+                        <i class="fa-solid fa-sun text-lg"></i>
+                    }@else {
+                        <i class="fa-solid fa-moon text-lg"></i>
+                    }
                 </button>
             </div>
             @if (!bars) {
@@ -43,7 +47,7 @@
                 <i class="fa-solid fa-bars dark:text-white text-black text-lg" (click)="this.toggleBars()"></i>
             </button>
             }@else {
-            <button class="p-2 max-w-[32px]">
+            <button class="p-2 w-[31.75px] max-w-[32px]">
                 <i class="fa-solid fa-xmark dark:text-white text-black text-lg" (click)="this.toggleBars()"></i>
             </button>
             }

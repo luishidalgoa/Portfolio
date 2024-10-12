@@ -8,10 +8,9 @@ import { DarkModeService } from '../services/dark-mode.service';
 })
 export class NavComponent implements OnInit{
   public dark_mode = inject(DarkModeService);
+  public darkMode: boolean = false;
   bars:boolean = false;
 
-  constructor() {
-  }
   toggleTheme() {
     this.dark_mode.changeDarkMode();
   }
@@ -31,6 +30,9 @@ export class NavComponent implements OnInit{
 
   ngOnInit(): void {
     this.setActiveClass();
+    this.dark_mode.darkMode.subscribe(darkMode => {
+      this.darkMode = darkMode
+    })
   }
 
   @HostListener('window:scroll', [])
