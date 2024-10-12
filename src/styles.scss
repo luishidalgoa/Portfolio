@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+body{
+    font-family: "Onest", sans-serif;
+}
+
+@for $i from 100 through 900 {
+    .text-primary-#{$i} {
+        --tw-text-opacity: 1;
+        color: rgb(197 112 93 / var(--tw-text-opacity));
+    }
+}
+@for $i from 100 through 900 {
+    .bg-primary-#{$i} {
+        --tw-text-opacity: 1;
+        background-color: rgb(197 112 93 / var(--tw-text-opacity));
+    }
+}
+
+@for $i from 100 through 900 {
+    .text-secondary-#{$i} {
+        --tw-text-opacity: 1;
+        color: rgb(0 130 161 / var(--tw-text-opacity));
+    }
+}
+
+@for $i from 100 through 900 {
+    .bg-secondary-#{$i} {
+        --tw-text-opacity: 1;
+        background-color: rgb(0 130 161 / var(--tw-text-opacity));
+    }
+}
+
+@for $i from 100 through 900 {
+    .text-crusta-#{$i} {
+        --tw-text-opacity: 1;
+        color: rgb(156 43 16 / var(--tw-text-opacity));
+    }
+}
+
+@for $i from 100 through 900 {
+    :is(.dark .dark\:text-dark-#{$i}) {
+        --tw-text-opacity: 1;
+        color: rgb(249 250 251 / var(--tw-text-opacity));
+    }
+}
+
+@for $i from 100 through 900 {
+    :is(.dark .dark\:text-crusta-#{$i}) {
+        --tw-text-opacity: 1;
+        color: rgb(255 178 114 / var(--tw-text-opacity));
+    }
+}
+
+@for $i from 100 through 900 {
+    :is(.dark .dark\:text-daintree-#{$i}) {
+        --tw-text-opacity: 1;
+        color: rgb(153 255 255 / var(--tw-text-opacity));
+    }
+}

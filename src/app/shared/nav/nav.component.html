@@ -1,0 +1,62 @@
+<nav class="fixed w-full mt-4 z-50 hidden md:block">
+    <div class=" px-4 flex items-center h-12">
+        <div class="flex items-center justify-center w-full left-0 right-0">
+            <div class="shadow-lg p-2 rounded-full navbar bg-gray-500 bg-opacity-95 md:space-x-8">
+                <div class="px-2 flex items-center gap-4">
+                    @for (item of sections; track $index) {
+                    <a [href]="'#'+item.id"
+                        class="flex gap-2 nav-link text-white hover:text-gray-300 items-center px-3 py-2 rounded-md text-md font-medium"
+                        (click)="setActiveSection(item.id)" [ngClass]="{'active': item.isActive}">
+                        <span><i class="fa-solid {{item.iconClass}}"></i></span>
+                        <span class="hidden md:inline">{{item.name}}</span>
+                    </a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div
+            class="h-auto bg-slate-800/20 hover:bg-slate-800/5 dark:bg-slate-500/40 dark:hover:bg-slate-500/20 rounded-md">
+            <button
+                class="text-[#020617] dark:text-white flex items-center px-3 py-2 rounded-md text-lg font-medium focus:outline-none"
+                (click)="toggleTheme()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<nav class="fixed px-2 py-4 w-full h-auto top-0 z-50 md:hidden backdrop-blur-md bg-slate-50/5 ">
+    <header class="flex justify-between">
+        <div></div>
+        <div class="flex items-center">
+            <div
+                class="bg-slate-800/20 hover:bg-slate-800/20 dark:bg-slate-500/40 dark:hover:bg-slate-500/20 rounded-md">
+                <button
+                    class="text-[#020617] dark:text-white flex items-center  rounded-md px-2 max-w-[32px] font-medium focus:outline-none"
+                    (click)="toggleTheme()">
+                    <i class="fa-solid fa-moon text-lg"></i>
+                </button>
+            </div>
+            @if (!bars) {
+            <button class="p-2 max-w-[32px]">
+                <i class="fa-solid fa-bars dark:text-white text-black text-lg" (click)="this.toggleBars()"></i>
+            </button>
+            }@else {
+            <button class="p-2 max-w-[32px]">
+                <i class="fa-solid fa-xmark dark:text-white text-black text-lg" (click)="this.toggleBars()"></i>
+            </button>
+            }
+        </div>
+    </header>
+    <div [ngClass]="{'flex-col justify-center items-center': true,'flex': bars,'hidden': !bars}">
+        @for (item of sections; track $index) {
+        <a [href]="'#'+item.id"
+            class="cursor-pointer flex gap-2 dark:text-white text-slate-700 items-center px-3 py-2 rounded-md text-md font-medium"
+            (click)="setActiveSection(item.id)">
+            <span><i class="fa-solid {{item.iconClass}}"></i></span>
+            <span>{{item.name}}</span>
+        </a>
+        }
+    </div>
+</nav>
