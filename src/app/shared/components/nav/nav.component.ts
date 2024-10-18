@@ -1,5 +1,5 @@
 import { Component, HostListener, inject, OnInit } from '@angular/core';
-import { DarkModeService } from '../services/dark-mode.service';
+import { DarkModeService } from '../../services/dark-mode.service';
 
 @Component({
   selector: 'shared-nav',
