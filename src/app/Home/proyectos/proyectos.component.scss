@@ -1,0 +1,7 @@
+.ellipsis {
+  display: -webkit-box; /* Usa un contenedor flexible */
+  -webkit-box-orient: vertical; /* Orienta el contenedor en vertical */
+  overflow: hidden; /* Oculta el desbordamiento */
+  -webkit-line-clamp: 5; /* Número máximo de líneas que se mostrarán */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos */
+}

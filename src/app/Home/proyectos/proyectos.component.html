@@ -1,1 +1,25 @@
-<p>proyectos works!</p>
+<text-section-title>Proyectos</text-section-title>
+<p class="mt-6 text-dark-700 dark:text-dark-200">Mis proyectos más emocionantes y creativos. Cada proyecto es el resultado de mi dedicación y pasión por la programación, y estoy encantado de compartirlos contigo. Descubre cómo transformo ideas en realidades digitales. ¡Explora, inspira y crea con mis proyectos de software!</p>
+<div id="proyectos"
+    class="mt-6 grid mb-8 border rounded-lg overflow-hidden border-gray-200 shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+    @for (card of cardsRendered; track $index) {
+    <a [href]='card.articleUrl'
+        [ngClass]="{'flex bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700':true,'flex-col': $index < 2, 'flex-row-reverse col-span-2': $index === 2}">
+        <div class="relative {{card.degree}}"
+            [ngClass]="{'p-2 bg-gradient-to-t overflow-hidden': true,'sm:w-1/2 flex': $index === 2}">
+            <span class="absolute top-4 left-4 backdrop-blur-md bg-dark-600/50 py-1 px-2 rounded-full z-10 text-sm font-semibold text-dark-100 ">
+                <p>FullStack</p>
+            </span>
+            <img [ngClass]="{'hover:scale-110  transition-transform': true,'object-contain': $index === 2}"
+                [src]="card.imageUrl" alt="" />
+                
+        </div>
+        <div class=" overflow-ellipsis" [ngClass]="{'p-5':true, 'sm:w-1/2': $index === 2}">
+            <span>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{card.title}}</h5>
+            </span>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ellipsis">{{card.description}}</p>
+        </div>
+    </a>
+    }
+</div>
