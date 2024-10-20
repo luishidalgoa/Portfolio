@@ -47,7 +47,6 @@ export class ProyectosComponent implements OnInit{
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    console.log(window.innerWidth);
     if(window.innerWidth < 640){
       this.cardsRendered = this.cards.slice(0, 1);
     }else if(window.innerWidth < 1024){

@@ -11,6 +11,5 @@ export class TestimonialCard {
   @Input() index!: number;
 
   ngOnInit() {
-    console.log(this.index);
   }
 }
