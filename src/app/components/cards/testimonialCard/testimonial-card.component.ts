@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Proyect } from '../../../Home/models/proyect';
 
 @Component({
   selector: 'card-testimonialCard',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './testimonial-card.component.scss'
 })
 export class TestimonialCard {
+  @Input() card!: Proyect;
+  @Input() index!: number;
 
+  ngOnInit() {
+    console.log(this.index);
+  }
 }
