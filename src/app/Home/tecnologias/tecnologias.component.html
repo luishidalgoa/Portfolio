@@ -1,1 +1,10 @@
-<p>tecnologias works!</p>
+<section class="grid gap-10">
+    <text-section-title>Tecnologías</text-section-title>
+    <ul class="grid grid-cols-3 md:grid-cols-4 gap-2 items-stretch text-indigo-600 text-sm font-semibold dark:text-white  dark:font-medium italic">
+        @for (item of techs; track $index) {
+            <li class="cursor-pointer flex flex-wrap justify-center items-center px-4 py-4 w-full border shadow-md border-indigo-600 dark:border-gray-700 dark:shadow-xl dark:bg-gray-800 rounded-lg hover:scale-110 transition-transform">
+                <span class="">{{item.name}}</span>
+            </li>
+        }
+    </ul>
+</section>

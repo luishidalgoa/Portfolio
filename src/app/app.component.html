@@ -1,5 +1,5 @@
-<main [className]="this.darkmode ? 'dark bg-dark-950 w-full -z-[3] absolute' : 'light w-full -z-[3] absolute'">
-  <router-outlet >
+<main [ngClass]="{'-z-[3] absolute w-full':true,'dark bg-dark-950': this.darkmode, 'light': !this.darkmode}">
+  <router-outlet>
     <shared-nav></shared-nav>
   </router-outlet>
 </main>

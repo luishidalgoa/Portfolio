@@ -8,6 +8,8 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
+import { ViewAllProjectsComponent } from './view-all-projects/view-all-projects.component';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -18,12 +20,14 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
     ExperienciaComponent,
     ProyectosComponent,
     SobreMiComponent,
-    TecnologiasComponent
+    TecnologiasComponent,
+    ViewAllProjectsComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    ComponentsModule
+    ComponentsModule,
+    RouterLink
   ]
 })
 export class HomeModule { }
