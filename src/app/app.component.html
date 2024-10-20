@@ -1,5 +1,7 @@
-<main [ngClass]="{'-z-[3] absolute w-full':true,'dark bg-dark-950': this.darkmode, 'light': !this.darkmode}">
-  <router-outlet>
-    <shared-nav></shared-nav>
-  </router-outlet>
+<main [ngClass]="{'-z-[3] absolute w-full flex justify-center':true,'dark bg-dark-950': this.darkmode, 'light': !this.darkmode}"> 
+  <shared-nav class="absolute left-0"></shared-nav>
+  <div class="max-w-[90%] lg:max-w-[740px] grid gap-14">
+    <router-outlet></router-outlet>
+    <shared-footer></shared-footer>
+  </div>
 </main>
