@@ -1,20 +1,20 @@
-<a [href]='card.articleUrl'
-    [ngClass]="{'flex h-full bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700':true,'flex-col': index < 2, 'flex-row-reverse col-span-2': index === 2}">
-    <div class="relative {{card.degree}}"
-        [ngClass]="{'p-2 bg-gradient-to-t overflow-hidden': true,'md:h-[162.5px] md:max-h-[162.5px]': index < 2, 'sm:w-1/2 flex h-auto': index === 2}">
+<a [routerLink]="[url, 'articles', card.articleUrl]"
+    [ngClass]="{'cursor-pointer flex h-full border border-gray-200 dark:bg-gray-800 dark:border-gray-700 flex-col':true, 'md:flex-row-reverse md:col-span-2': position==='end'}">
+    <div data-aos="flip-left" class="relative {{card.degree}}"
+        [ngClass]="{'p-2 bg-gradient-to-t overflow-hidden': true,'md:h-auto': position!=='end', 'sm:w-1/2 flex h-auto': position==='end'}">
         <span
             class="absolute top-4 left-4 backdrop-blur-md bg-dark-600/50 py-1 px-2 rounded-full z-10 text-sm font-semibold text-dark-100 ">
             <p>{{card.type}}</p>
         </span>
-        @defer(on idle){
-            <img [ngClass]="{'hover:scale-110 w-full h-auto  transition-transform p-2 relative': true,'object-contain': index === 2}"
+        @defer(){
+            <img [ngClass]="{'hover:scale-110 w-full h-auto  transition-transform p-2 relative': true,'object-contain': position==='end'}"
             [src]="card.imageUrl" alt="" loading="lazy" />
         }@placeholder {
-            <div class="w-full h-full bg-white">placeholder</div>
+            <div class="w-full h-full bg-gray-700/30"></div>
         }
 
     </div>
-    <div class="overflow-ellipsis flex flex-col" [ngClass]="{'p-5':true, 'md:h-[calc(100%-162.5px)]': index<2, 'sm:w-1/2': index === 2}">
+    <div class="overflow-ellipsis flex flex-col" [ngClass]="{'p-5':true, 'md:h-[calc(100%-162.5px)]': position!=='end', 'sm:w-1/2': position==='end'}">
         <span>
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{card.title}}</h5>
         </span>

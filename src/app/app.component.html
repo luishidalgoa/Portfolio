@@ -1,7 +1,9 @@
-<main [ngClass]="{'-z-[3] absolute w-full flex justify-center':true,'dark bg-dark-950': this.darkmode, 'light': !this.darkmode}"> 
+<main [ngClass]="{'-z-[3] absolute w-full min-h-full flex justify-center bg-[#f3f3f3]':true,'dark bg-dark-950': this.darkmode, 'light': !this.darkmode}"> 
   <shared-nav class="absolute left-0"></shared-nav>
-  <div class="max-w-[90%] lg:max-w-[740px] grid gap-14">
+  <div class="absolute -z-[1] h-screen w-screen max-h-screen max-w-full" id="particles-js"></div>
+  <div class="absolute left-0 top-0 z-[-2] h-screen w-full dark:bg-dark-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,153,255,0.25),rgba(255,255,255,0))]"></div>
+  <div class="max-w-[90%] lg:max-w-[740px] grid">
     <router-outlet></router-outlet>
-    <shared-footer></shared-footer>
+    <shared-footer class="mt-14"></shared-footer>
   </div>
 </main>
