@@ -1,12 +1,12 @@
 import { Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
-import { DarkModeService } from '../../shared/services/dark-mode.service';
-
+import { DarkModeService } from '../../shared/services/dark-mode.service'
 @Component({
   selector: 'home-tecnologias',
   templateUrl: './tecnologias.component.html',
   styleUrl: './tecnologias.component.scss'
 })
 export class TecnologiasComponent {
+
   constructor(private darkMode:DarkModeService){}
   techs: { name: string}[] = [
     {name: 'Angular'},

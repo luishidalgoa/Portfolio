@@ -2,75 +2,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 
-body{
-    font-family: "Onest", sans-serif;
+body {
+  font-family: "Onest", sans-serif;
 }
 
-@for $i from 100 through 900 {
-    .text-primary-#{$i} {
-        --tw-text-opacity: 1;
-        color: rgb(197 112 93 / var(--tw-text-opacity));
+//markdown
+// Estilos para el contenido Markdown
+.markdown {
+    /* Estilos generales para modo claro y oscuro */  
+    h1 {
+      @apply text-3xl font-bold my-4  text-black/70 dark:text-white/95; /* Títulos principales */
     }
-}
-@for $i from 100 through 900 {
-    .bg-primary-#{$i} {
-        --tw-text-opacity: 1;
-        background-color: rgb(197 112 93 / var(--tw-text-opacity));
+    
+    h2 {
+      @apply text-2xl font-semibold my-3 text-black/70 dark:text-white/95; /* Subtítulos */
     }
-}
-
-@for $i from 100 through 900 {
-    .text-secondary-#{$i} {
-        --tw-text-opacity: 1;
-        color: rgb(0 130 161 / var(--tw-text-opacity));
+    
+    h3 {
+      @apply text-xl font-semibold my-2 text-gray-800 dark:text-zinc-200; /* Sub-subtítulos */
     }
-}
-
-@for $i from 100 through 900 {
-    .bg-secondary-#{$i} {
-        --tw-text-opacity: 1;
-        background-color: rgb(0 130 161 / var(--tw-text-opacity));
+    
+    p {
+      @apply text-base leading-relaxed mb-4 text-black/70 dark:text-white/70; /* Párrafos */
     }
-}
-
-@for $i from 100 through 900 {
-    .text-crusta-#{$i} {
-        --tw-text-opacity: 1;
-        color: rgb(156 43 16 / var(--tw-text-opacity));
+    
+    a {
+      @apply text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-200; /* Enlaces */
     }
-}
-
-@for $i from 100 through 900 {
-    :is(.dark .dark\:text-dark-#{$i}) {
-        --tw-text-opacity: 1;
-        color: rgb(249 250 251 / var(--tw-text-opacity));
+    
+    ul {
+      @apply list-disc list-inside mb-4; /* Listas desordenadas */
     }
-}
-
-@for $i from 100 through 900 {
-    :is(.dark .dark\:text-crusta-#{$i}) {
-        --tw-text-opacity: 1;
-        color: rgb(255 178 114 / var(--tw-text-opacity));
+    
+    ol {
+      @apply list-decimal list-inside mb-4; /* Listas ordenadas */
     }
-}
-
-@for $i from 100 through 900 {
-    :is(.dark .dark\:text-daintree-#{$i}) {
-        --tw-text-opacity: 1;
-        color: rgb(153 255 255 / var(--tw-text-opacity));
+    
+    blockquote {
+      @apply border-l-4 border-gray-300 dark:border-gray-700 pl-4 italic text-gray-600 dark:text-gray-400 my-4; /* Citas */
     }
-}
-
-.bg-dark-950 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(2 6 23);
-}
-
-
-.bg-dark-50 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(248 250 252 );
-}
-
+    
+    code {
+      @apply bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded px-1 py-0.5; /* Código en línea */
+    }
+    
+    pre {
+      @apply bg-gray-200 dark:bg-gray-800 p-4 rounded overflow-x-auto; /* Bloques de código */
+    }
+    
+    img {
+      @apply h-auto w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
+    }
+    
+    table {
+      @apply min-w-full border-collapse mb-4; /* Tablas */
+    }
+    
+    th {
+      @apply bg-gray-300 dark:bg-gray-700 text-left p-2; /* Encabezados de tabla */
+    }
+    
+    td {
+      @apply border-t border-gray-300 dark:border-gray-600 p-2; /* Celdas de tabla */
+    }
+  }
+  

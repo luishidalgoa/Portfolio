@@ -7,9 +7,8 @@ import { SharedModule } from './shared/shared.module';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { BannerComponent } from './Home/banner/banner.component';
-import { HomeComponent } from './Home/pages/home/home.component';
 import { HomeModule } from './Home/home.module';
+import { ArticlesModule } from './articles/articles.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,8 @@ import { HomeModule } from './Home/home.module';
     AppRoutingModule,
     SharedModule,
     FontAwesomeModule,
-    HomeModule
+    HomeModule,
+    ArticlesModule
   ],
   providers: [
     provideClientHydration(),

@@ -5,6 +5,7 @@ import { SectionTitleComponent } from './texts/section-title/section-title.compo
 import { TestimonialCard } from './cards/testimonialCard/testimonial-card.component';
 import { ViewMoreComponent } from './buttons/view-more/view-more.component';
 import { GroupElementsCardComponent } from './cards/group-elements-card/group-elements-card.component';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -17,7 +18,8 @@ import { GroupElementsCardComponent } from './cards/group-elements-card/group-el
   ],
   imports: [
     CommonModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterLink
   ],
   exports: [
     ButtonPrimary,
