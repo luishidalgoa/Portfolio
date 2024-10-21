@@ -33,7 +33,7 @@ export class TestimonialCard {
     }
 
     //extraemos la ruta completa de la url
-    if(!this._router.url.split('/')[1].includes('#')) {
+    if(!this._router.url.split('/')[1].includes('#') && this._router.url.split('/')[1].includes('proyectos')){
       this.url = '../'
     }else{
       this.url = '/'

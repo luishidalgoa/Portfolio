@@ -1,10 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import matter from 'gray-matter-browser';
-import { error } from 'node:console';
-import { forkJoin, Observable, of, Subscription } from 'rxjs';
+import { forkJoin } from 'rxjs';
 import { Proyect } from '../../Home/models/proyect';
-import { resolve } from 'node:path';
 import { marked } from 'marked';
 
 @Injectable({
