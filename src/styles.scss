@@ -21,7 +21,7 @@ body {
     }
     
     h3 {
-      @apply text-xl font-semibold my-2 text-gray-800 dark:text-zinc-200; /* Sub-subtítulos */
+      @apply text-xl font-semibold my-2 text-black/70 dark:text-zinc-200; /* Sub-subtítulos */
     }
     
     p {
@@ -33,15 +33,23 @@ body {
     }
     
     ul {
-      @apply list-disc list-inside mb-4; /* Listas desordenadas */
+      @apply border-l-4 border-gray-300 dark:border-gray-700 pl-4 list-disc list-inside mb-4; /* Listas desordenadas */
     }
     
     ol {
-      @apply list-decimal list-inside mb-4; /* Listas ordenadas */
+      @apply border-l-4 border-gray-300 dark:border-gray-700 pl-8 list-decimal mb-4; /* Listas ordenadas */
+    }
+    
+    li {
+      @apply italic text-black/70 dark:text-white/70; /* Elementos de lista */
     }
     
     blockquote {
-      @apply border-l-4 border-gray-300 dark:border-gray-700 pl-4 italic text-gray-600 dark:text-gray-400 my-4; /* Citas */
+      @apply py-3 bg-gray-50 border-l-4 shadow-lg border-gray-300 dark:border-gray-700 pl-4 italic text-gray-600 dark:text-gray-400 my-4 dark:bg-gray-800; /* Citas */
+
+      *{
+        @apply mb-0
+      }
     }
     
     code {
@@ -52,8 +60,12 @@ body {
       @apply bg-gray-200 dark:bg-gray-800 p-4 rounded overflow-x-auto; /* Bloques de código */
     }
     
+    img[jpg] {
+      @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800 shadow-lg ; /* Imágenes */
+    }
+
     img {
-      @apply h-auto w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
+      @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
     }
     
     table {

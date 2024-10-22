@@ -7,48 +7,54 @@ tags: [Angular]
 degree: 'from-violet-400 to-purple-300'
 type: 'FullStack'
 ---
-# Creating a Basic Game in Godot 4: A Beginner's Guide
 
-Godot 4 is a powerful and open-source game engine that's perfect for developers of all skill levels. In this blog post, we'll walk through the steps of creating a basic 2D game in Godot 4, perfect for beginners.
+<img jpg src="https://media.licdn.com/dms/image/v2/D4D12AQFlGRzlwSaW3Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699915090980?e=1735171200&v=beta&t=L039a0Q_46Z2X8qji3woZgqr_brYycX4nmyMTvFhj00">
 
-## Introduction to Godot 4
+# Proyecto de Aplicación de Música en JavaFX
 
-Godot 4 is the latest version of the Godot game engine, known for its user-friendly interface and versatile functionality. Whether you're a seasoned developer or just starting, Godot 4 offers an accessible platform for game development.
+En este artículo, quiero compartir con ustedes un proyecto en el que he estado trabajando durante los últimos meses y he tenido el honor de dirigir como Scrum Master de equipo. Se trata de una aplicación de música hecha en **JavaFX**, que tiene varias funcionalidades interesantes y ha sido el resultado de un trabajo colaborativo.
 
-## Step 1: Setting Up Your Project
+## Funcionalidades
 
-First, you'll need to download and install Godot 4 from the [official Godot website](https://godotengine.org/). Once installed, open Godot and create a new project. Choose a suitable location for your project and give it a name.
+La aplicación es una plataforma para descubrir, escuchar y publicar música. Algunas de las funciones que incluye son:
 
-![Godot Project Setup](./godot-game.png)
+- Descubrir, escuchar y compartir música de diferentes artistas.
+- Ver los álbumes a los que pertenecen las canciones que te gustan.
+- Buscar canciones por nombre, artista, álbum o lista de reproducción.
+- Crear tus propias listas de reproducción o suscribirte a las de otros usuarios.
+- Comentar las listas de reproducción.
 
-## Step 2: Understanding the Interface
+## La metodología y el enfoque de trabajo
 
-Familiarize yousrself with the Godot interface. The main areas include the Scene Panel, where you'll build your game scenes; the Inspector, for adjusting the properties of selected objects; and the FileSystem, where all your project's files are managed.
+### Metodología
 
-## Step 3: Creating Your First Scene
+Hemos seguido la **metodología Ágil**, de modo que cuando estábamos en las horas de clase, nos reuníamos y servíamos de apoyo entre los compañeros para resolver dudas o problemas. El proyecto lo dividimos en **4 etapas**:
 
-A scene in Godot is a collection of elements like sprites, sounds, and scripts. Create your first scene by selecting 'Scene' -> 'New Scene'. Add a Node2D as your root node, which will act as the container for your game objects.
+1. **Diseño**: 
+   Para el diseño de la aplicación quise probar distintas fórmulas para estructurar el proyecto. Una de ellas fue desarrollar de forma individual el diagrama E/R y ponerlo en común, y la otra fue hacer el diagrama de clases en conjunto. Sin embargo, este último enfoque resultó ser demasiado lento.
 
-## Step 4: Adding Sprites and Characters
+2. **DAOs**: 
+   Para este sprint establecí un plazo de 3 días para desarrollar 1-2 DAO por persona de un total de 6 DAOs. Aunque hubo retrasos, afortunadamente no afectaron la entrega final.
 
-To add a character or object to your scene, you'll need to add a Sprite node. Download or create a simple 2D character sprite and import it into Godot. Then, drag and drop the sprite file onto your Sprite node in the scene.
+3. **Componentes**: 
+   Este sprint fue en el que más disfruté, porque es cuando realmente empezamos a ver el resultado que tendría la aplicación. Los componentes comenzaban a ser interactivos y la aplicación cobraba vida.
 
-![Adding Sprite in Godot](https://example.com/adding-sprite-godot.png)
+4. **Sprint Final**: 
+   En el sprint final, íbamos cortos de tiempo, así que para agilizar el proceso y evitar errores, decidí encargarme personalmente de unir todo, así como de agregar mejoras donde lo considerara necesario. Fueron 3 días intensos programando desde la mañana hasta la noche, porque la ambición era mayor que el tiempo disponible.
 
-## Step 5: Basic Scripting
+### Enfoque orientado a vistas y componentes (Inspirado en Angular)
 
-Godot uses GDScript, a Python-like language, for scripting game logic. To add behavior to your character, right-click on the Sprite node and select 'Attach Script'. In the script editor, you can write simple commands to control the character's actions.
+Como alumnos de 2º de Desarrollo de Aplicaciones Multiplataforma en el 1º trimestre, aún estamos asimilando la programación orientada a componentes. Hasta ahora, en Java solo habíamos trabajado con el modelo **Vista-Controlador**.
 
-## Step 6: Running Your Game
+Soy una persona a la que le gusta aplicar nuevas formas de trabajo para desarrollarme como profesional en el sector. Por ello, propuse al equipo desarrollar el proyecto con un enfoque orientado a componentes, lo cual dio muy buenos resultados.
 
-To see your game in action, click the 'Play' button at the top of the screen. If you haven't set a main scene yet, Godot will prompt you to select one. Choose your newly created scene and watch your character come to life!
+Orientar el proyecto a componentes nos permitió desarrollar de una manera más flexible y cómoda, ya que cada componente era lo suficientemente independiente como para no depender del trabajo del resto del equipo. Además, nos ahorró muchos problemas a la hora de unir los componentes de diferentes compañeros dentro de nuestras vistas, porque abstraíamos los posibles errores de manera más controlada.
 
-![Running Game in Godot](https://example.com/running-game-godot.png)
+## Conclusión
 
-## Conclusion
+En definitiva, cuando presentamos la aplicación, fue muy bien recibida por mis compañeros, y me alegraría mucho que sirviese como inspiración para futuros proyectos.
 
-Creating a basic game in Godot 4 is a fun and rewarding experience. This beginner's guide should help you get started on your game development journey. As you become more comfortable with Godot's features, you'll be able to create more complex and engaging games.
+---
 
-Remember, game development is a learning process, so don't hesitate to experiment and explore the capabilities of Godot 4. Happy game developing!
-
-For more detailed tutorials, check out [Godot 4 Documentation](https://docs.godotengine.org/en/stable/).
+## Colaboradores
+>  **Alejandro Gutiérrez | Linkedln**: [Alejandro142003](https://www.linkedin.com/in/alejandro-gutierrez-cruces-7a78a32aa) <br> **Erich Leonardo García Hanzz | Github**: [ErichLeonardo](https://github.com/ErichLeonardo)<br> **Adrián Lucena | Linkedln**: [AdrianLucena](https://www.linkedin.com/in/adrian-lucena-258029298/)
