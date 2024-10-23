@@ -4,7 +4,7 @@ articleUrl: 'JavaFX-Music-Player'
 description: 'Se trata de una aplicación de música hecha en JavaFX, que tiene varias funcionalidades interesantes y quha sido el resultado de un trabajo colaborativo.'
 imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/JavaFX%20Music%20Player.png?raw=true'
 tags: [Angular]
-degree: 'from-violet-400 to-purple-300'
+degree: 'bg-gradient-to-r from-cyan-400 to-blue-500'
 type: 'FullStack'
 ---
 
@@ -13,6 +13,8 @@ type: 'FullStack'
 # Proyecto de Aplicación de Música en JavaFX
 
 En este artículo, quiero compartir con ustedes un proyecto en el que he estado trabajando durante los últimos meses y he tenido el honor de dirigir como Scrum Master de equipo. Se trata de una aplicación de música hecha en **JavaFX**, que tiene varias funcionalidades interesantes y ha sido el resultado de un trabajo colaborativo.
+
+<iframe style="min-width: 100%;height: 400px;border-radius: 10px;" src="https://www.youtube.com/embed/UPvLBqdMae0?si=KqEku9TWqcyyLJzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Funcionalidades
 

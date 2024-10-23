@@ -6,11 +6,11 @@
             class="absolute top-4 left-4 backdrop-blur-md bg-dark-600/50 py-1 px-2 rounded-full z-10 text-sm font-semibold text-dark-100 ">
             <p>{{card.type}}</p>
         </span>
-        @defer(){
+        @defer(on idle){
             <img [ngClass]="{'hover:scale-110 w-full h-auto  transition-transform p-2 relative': true,'object-contain': position==='end'}"
             [src]="card.imageUrl" alt="" loading="lazy" />
         }@placeholder {
-            <div class="w-full h-full bg-gray-700/30"></div>
+            <div class="w-full h-48 md:h-40 "></div>
         }
 
     </div>

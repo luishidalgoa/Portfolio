@@ -6,50 +6,222 @@ imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfol
 tags: [Angular,SpringBoot,MySQL,Tailwind,Sass]
 degree: 'from-blue-800 to-indigo-900'
 type: 'FullStack'
+
 ---
 
-# Creating a Basic Game in Godot 4: A Beginner's Guide
+## Enlaces:
 
-Godot 4 is a powerful and open-source game engine that's perfect for developers of all skill levels. In this blog post, we'll walk through the steps of creating a basic 2D game in Godot 4, perfect for beginners.
+- **Link del repositorio FrontEnd Github**: [Repositorio](https://github.com/luishidalgoa/Project_Management_System)
+- **Link del repositorio BackEnd Github**: [Repositorio](https://github.com/luishidalgoa/Project_Management_System_Backend)
+- **Link de la aplicación**: [FCT_Atmira - Welcome](https://fct-atmira-front.vercel.app/Welcome)
 
-## Introduction to Godot 4
+> **Nota**: El BackEnd de la aplicación web está alojado en un hosting gratuito, por lo que es probable que la primera consulta a la API demore al menos 5 minutos.
 
-Godot 4 is the latest version of the Godot game engine, known for its user-friendly interface and versatile functionality. Whether you're a seasoned developer or just starting, Godot 4 offers an accessible platform for game development.
+---
 
-## Step 1: Setting Up Your Project
+## Introducción
 
-First, you'll need to download and install Godot 4 from the [official Godot website](https://godotengine.org/). Once installed, open Godot and create a new project. Choose a suitable location for your project and give it a name.
+<img jpg src="https://media.licdn.com/dms/image/v2/D4D12AQGxdYXuNOW1iw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1729635503783?e=1735171200&v=beta&t=Qlh13gS1D8jDKJ08SUsr-HNO-zZHZsnk-3zh_i51XdY">
 
-![Godot Project Setup](/assets/posts/Project-Management-Tool/godot-game.png)
+## Propuesta:
 
-## Step 2: Understanding the Interface
+El origen de este proyecto nace de una colaboración entre el instituto en el que estaba realizando 2º Grado Superior 'DAM' y la consultora Atmira. El que iba a ser nuestro tutor de prácticas.
 
-Familiarize yousrself with the Godot interface. The main areas include the Scene Panel, where you'll build your game scenes; the Inspector, for adjusting the properties of selected objects; and the FileSystem, where all your project's files are managed.
+## Propósito del proyecto:
 
-## Step 3: Creating Your First Scene
+El propósito de este proyecto era desarrollar un sistema parecido a Jira o Trello, donde un usuario pudiera registrar el trabajo en una pestaña indicando el proyecto y detallar lo realizado mediante códigos de registro. También debía contar con otra pestaña para incurrir gastos de empresa, como dietas y otros costos, asociados a un proyecto.
 
-A scene in Godot is a collection of elements like sprites, sounds, and scripts. Create your first scene by selecting 'Scene' -> 'New Scene'. Add a Node2D as your root node, which will act as the container for your game objects.
+## Objetivos:
 
-## Step 4: Adding Sprites and Characters
+<h3 tab="1"> Registro Detallado de Tareas por Proyecto:</h3>
 
-To add a character or object to your scene, you'll need to add a Sprite node. Download or create a simple 2D character sprite and import it into Godot. Then, drag and drop the sprite file onto your Sprite node in the scene.
+<div tab="2">
 
-![Adding Sprite in Godot](https://th.bing.com/th/id/R.d3be4e6b779542c66d10e5c30969f52d?rik=%2bXxftkvIFLd%2fcQ&pid=ImgRaw&r=0)
+- Los usuarios pueden agregar tareas asociadas a un flujo de trabajo dentro del proyecto, similar a sistemas de gestión como Jira.
+- Posibilidad de agregar subtareas relacionadas con otras tareas dentro de cada proyecto, permitiendo gestionar el flujo de trabajo de manera jerárquica.
+- Crear un sistema de identificadores auto-incrementales personalizados, en lugar del clásico autoincremento de la base de datos.
+</div>
+<h3 tab="1"> Gestión de Gastos de Empresa:</h3>
 
-## Step 5: Basic Scripting
+<div tab="2">
 
-Godot uses GDScript, a Python-like language, for scripting game logic. To add behavior to your character, right-click on the Sprite node and select 'Attach Script'. In the script editor, you can write simple commands to control the character's actions.
+- Los usuarios pueden registrar los gastos incurridos asociados a proyectos específicos (dietas, transporte, etc.).
+- Permite agregar información detallada sobre cada gasto, como descripción, fecha y monto gastado.
+</div>
 
-## Step 6: Running Your Game
+<h3 tab="1"> Capa de Seguridad:</h3>
 
-To see your game in action, click the 'Play' button at the top of the screen. If you haven't set a main scene yet, Godot will prompt you to select one. Choose your newly created scene and watch your character come to life!
+<div tab="2">
 
-![Running Game in Godot](https://th.bing.com/th/id/R.d3be4e6b779542c66d10e5c30969f52d?rik=%2bXxftkvIFLd%2fcQ&pid=ImgRaw&r=0)
+- Implementa una capa de seguridad proporcionando tokens de acceso al usuario que inicia sesión.
+- Acceso restringido a la API, permitiendo acceder solo desde el mismo puerto del API-Rest.
+</div>
 
-## Conclusion
+---
 
-Creating a basic game in Godot 4 is a fun and rewarding experience. This beginner's guide should help you get started on your game development journey. As you become more comfortable with Godot's features, you'll be able to create more complex and engaging games.
+## Guía de uso:
 
-Remember, game development is a learning process, so don't hesitate to experiment and explore the capabilities of Godot 4. Happy game developing!
+<img jpg src="https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/Project-Management-Tool/guia_uso.gif?raw=true">
 
-For more detailed tutorials, check out [Godot 4 Documentation](https://docs.godotengine.org/en/stable/).
+<h3 tab="1"> 1. Acceso e inicio de sesión:</h3>
+<p tab="2">Al acceder a la página de inicio, observarás una pantalla con los botones "Login" y "Sign in". Si no tienes cuenta, selecciona "Sign In", completa el formulario en el modal que se abre.</p>
+
+<h3 tab="1"> 2. Navegación entre paneles: </h3>
+<div tab="2">
+La aplicación cuenta con una barra de navegación entre los diferentes paneles:
+
+- **Your Work**: Visualiza todas las tareas asignadas dentro de los proyectos.
+- **Projects**: Muestra tus proyectos o aquellos en los que colaboras.
+- **Expense**: Permite crear un nuevo gasto o dieta asociada a un proyecto, o dirigirte al panel de gastos con un desglose completo de los reportados.
+
+<span style="display:flex;justify-content:center;">
+<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQGdkdDnSZa4LA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729682347648?e=1735171200&v=beta&t=dOXVbiydbQpzp7lCpqlmUUSq3jTn45XOGEinaSEvl7I">
+</span>
+</div>
+
+<h3 tab="1"> 3. Home:</h3>
+<div tab="2">
+En esta vista puedes observar un desglose de todos los proyectos en los que participas. También puedes editar o borrar proyectos.
+<span style="display:flex;justify-content:center;">
+<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQHZ0uh7LaDjnA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729683416750?e=1735171200&v=beta&t=OPYJJ-cVGk3E2YEt8SKpUwZIEVrAMpHr1-PV-FJkayw">
+</span>
+</div>
+
+<h3 tab="1"> 4. Vista general de un proyecto:</h3>
+<div tab="2">Al acceder a un proyecto, verás las tareas asociadas. Cada tarea puede tener subtareas, y ambas pueden ser asignadas a colaboradores.
+<span style="display:flex;justify-content:center;">
+<img style="min-width:100%;" style="" src="https://media.licdn.com/dms/image/v2/D4D12AQHRlkBHzZw07w/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685141794?e=1735171200&v=beta&t=RtZ55_YKMOSTdNCh5pLadJq0_-sbMDnw1W3VbBoakXo">
+</span>
+</div>
+
+
+<h3 tab="1"> 5. Edición de tareas y subtareas:</h3>
+<div tab="2">Puedes actualizar la información de tareas y subtareas a través del menú desplegable de tres puntos. Cambia el estado, el tipo de tarea o asigna la tarea a otro usuario.
+<span style="display:flex;justify-content:center;">
+<img src="https://media.licdn.com/dms/image/v2/D4D12AQGsxR4hN2IaRw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685648238?e=1735171200&v=beta&t=g8n2-QxKr_7nZqMnn4GbM7DW2nHxMjiAIEM3D79ZXVE">
+</span>
+</div>
+
+<h3 tab="1">6. Gestor de gastos de un proyecto:</h3>
+<div tab="2">
+
+Dentro de un proyecto, el botón "**_Expensive_**" muestra los gastos creados por colaboradores, para que como administrador del proyecto, decidas si aprobar o denegar el reembolso.
+<span style="display:flex;justify-content:center;">
+<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQGkoAYpMUb4gA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685887327?e=1735171200&v=beta&t=NKiagj2BervsBjrqam8Ok-ojJqFKEX_nrgc89EZl-QM">
+</span>
+</div>
+
+<h3 tab="1"> 7. Visualización de incidencias de gasto:</h3>
+
+<div tab="2">
+
+En **_Expense -> View all_** podrás visualizar todas las incidencias de gasto generadas por ti, con información sobre el estado de resolución y el proyecto correspondiente.
+<span style="display:flex;justify-content:center;">
+<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQHykAyyhAed5A/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685968197?e=1735171200&v=beta&t=dKYNcTv5G8-4KCOKrQ-DlFc1h64cGq8SwIyJ5G5_x0k">
+</span>
+</div>
+
+
+---
+
+## Relevancia:
+
+Este proyecto ha requerido conocimientos avanzados tanto de Front-End como de Back-End.
+
+<h3 tab="1"> BackEnd:</h3>
+<div tab="2">
+
+- SpringBoot, SpringSecurity para securizar la API.
+- Creación de identificadores incrementales personalizados.
+- Conocimientos avanzados en Java y SQL.</div>
+
+<h3 tab="1"> FrontEnd:</h3>
+<div tab="2">
+
+- Interfaz minimalista e intuitiva.
+- Sistema de rutas BreadCrumb para facilitar la navegación.
+- Optimización de consultas a la API mediante la reconstrucción de objetos en la memoria local.
+</div>
+
+---
+
+## Arquitectura:
+
+<h3 tab="1"> Paso a tablas de E/R:
+<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQEoeO7Wvr6yqw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729686803784?e=1735171200&v=beta&t=LiOISy2oe0-KtQnYNBGvo3GtRYH-z2wAtGV5W5shQCo">
+</h3>
+
+<h3 tab="2">Diagrama de flujo: 
+<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQHSdEKniMiIlg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729686981389?e=1735171200&v=beta&t=ecvMFZ4eIOdVAGHnkDFJJ3C4Jm8Tol_PtTdK53Mb08E">
+</h3>
+
+
+<h3 tab="1"> Requisitos FrontEnd:</h3>
+
+<div tab="2">
+
+- Cada paquete debe disponer de su propio routing y módulos.
+- Servicios específicos para proteger las rutas.
+- Uso de Lazy Load para cargar rutas.
+- Buen scaffolding del proyecto.
+- Uso correcto de los ciclos de vida de Angular.
+</div>
+
+<h3 tab="1"> Requisitos BackEnd:</h3>
+
+<div tab="2">
+
+- La aplicación servidor es una API-Rest.
+- **Api-Controller**: Proxy entre el Front-End y la lógica de Back-End.
+- Conexión de la aplicación Spring con MySQL desplegado en la nube.
+- **Api-Model**: Creación de DTO.
+- Sistema personalizado de identificación de proyectos, tareas y subtareas.
+</div>
+
+---
+
+## Plan de desarrollo:
+
+### 🚀 Front-End Development:
+
+**Sprint 1 (Proyectos y Tareas):**
+- ✅ Desarrollar interfaces.
+- ✅ Servicio Project.
+- ✅ Funcionalidades básicas para gestionar proyectos y tareas.
+- ✅ Desarrollo de UI.
+- ❌ Crear Logs.
+
+**Sprint 2 (Sistema de Colaboradores):**
+- ✅ Sistema de inicio de sesión y registro.
+- ✅ Asociar proyectos al usuario logueado.
+- ✅ Crear subtareas.
+- ✅ Visualización correcta de subtareas dentro de tareas.
+- ✅ Asignar tareas a colaboradores.
+- ❌ Todas las consultas a la API otorgan el token de acceso del usuario.
+
+**Sprint 3 (Subtareas):**
+- ✅ Renderización completa de subtareas.
+- ❌ Selección múltiple de subtareas en una tarea (Task-Board).
+- ✅ 🪲 [BUG] Las subtareas no se renderizan correctamente.
+- ❌ Asignación de tareas a usuarios.
+- ✅ Despliegue y corrección de bugs.
+
+### 🔧 Back-End Development:
+
+**Sprint 1 (Proyectos y Tareas):**
+- ✅ Crear y diseñar base de datos.
+- ✅ Crear proyectos.
+- ✅ Crear tareas dentro de un proyecto.
+- ✅ Funcionalidades básicas: Departamento, Expense, WorkPlace.
+
+**Sprint 2 (Sistema de Colaboradores):**
+- ✅ Securización de la API.
+- ✅ Renombrar EndPoints.
+- ✅ Sistema de inicio de sesión y registro.
+- ✅ Asociar proyecto con colaborador.
+
+**Sprint 3 (Subtareas):**
+- ✅ 🪲 [BUG] Cambiar consulta en TaskRepository “findSubtaskByParentTaskId()”.
+- ✅ 🪲 [BUG] Solucionar Bug en ListTaskById().
+- ✅ Funcionalidades de tareas (Asignar, status, etc.).
+- ✅ 🪲 [BUG] El método GetTasksByProject debe devolver solo las tareas hijo.

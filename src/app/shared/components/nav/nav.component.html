@@ -4,8 +4,8 @@
             <div class="shadow-lg p-2 rounded-full navbar bg-gray-500 bg-opacity-95 md:space-x-8">
                 <div class="px-2 flex items-center gap-4">
                     @for (item of sections; track $index) {
-                    <a [href]="'#'+item.id"
-                        class="flex gap-2 nav-link text-white hover:text-gray-300 items-center px-3 py-2 rounded-md text-md font-medium"
+                    <a (click)="navigate(item.id)"
+                        class="cursor-pointer flex gap-2 nav-link text-white hover:text-gray-300 items-center px-3 py-2 rounded-md text-md font-medium"
                         (click)="setActiveSection(item.id)" [ngClass]="{'active': item.isActive}">
                         <span><i class="fa-solid {{item.iconClass}}"></i></span>
                         <span class="hidden md:inline">{{item.name}}</span>
@@ -24,7 +24,6 @@
         </div>
     </div>
 </nav>
-
 
 <nav class="fixed px-2 py-4 w-full h-auto top-0 z-50 md:hidden backdrop-blur-md bg-slate-50/5 ">
     <header class="flex justify-between">
