@@ -7,48 +7,91 @@ tags: [Angular]
 degree: 'from-violet-500 to-orange-300'
 type: 'FrontEnd'
 ---
-# Creating a Basic Game in Godot 4: A Beginner's Guide
 
-Godot 4 is a powerful and open-source game engine that's perfect for developers of all skill levels. In this blog post, we'll walk through the steps of creating a basic 2D game in Godot 4, perfect for beginners.
+<img png src="https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/spotify_clon.png?raw=true">
 
-## Introduction to Godot 4
+# Enlaces:
+- **Repositorio:** [Github](https://github.com/luishidalgoa/Spotify_Clon)
 
-Godot 4 is the latest version of the Godot game engine, known for its user-friendly interface and versatile functionality. Whether you're a seasoned developer or just starting, Godot 4 offers an accessible platform for game development.
+> **Nota:** El proyecto está desplegado y funcional, pero debido a que consume la API de Spotify, solo los usuarios registrados en el dashboard de este proyecto en la API pueden acceder completamente.
 
-## Step 1: Setting Up Your Project
+---
 
-First, you'll need to download and install Godot 4 from the [official Godot website](https://godotengine.org/). Once installed, open Godot and create a new project. Choose a suitable location for your project and give it a name.
+## 1. Introducción
 
-![Godot Project Setup](./godot-game.png)
+**"Spotify Clon"** es un proyecto **sin ánimo de lucro** y con **fines educativos** que logra un parecido **casi exacto** con la versión web de **Spotify®**.
 
-## Step 2: Understanding the Interface
 
-Familiarize yousrself with the Godot interface. The main areas include the Scene Panel, where you'll build your game scenes; the Inspector, for adjusting the properties of selected objects; and the FileSystem, where all your project's files are managed.
+<iframe style="min-width: 100%;height: 400px;border-radius: 10px;" src="https://www.youtube.com/embed/xYG9SelwimE?si=su8k6m1JpYv2tAtl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Step 3: Creating Your First Scene
+<h3 tab="1"> Objetivo:</h3>
+<div tab="2">
 
-A scene in Godot is a collection of elements like sprites, sounds, and scripts. Create your first scene by selecting 'Scene' -> 'New Scene'. Add a Node2D as your root node, which will act as the container for your game objects.
+El motivo por el que decidí clonar la interfaz de usuario de **Spotify** fue el **impacto** que un proyecto como este podría tener en mi **currículum**, sirviendo como una **prueba técnica** de mis habilidades. Además, este proyecto fue realizado durante el **1º trimestre de 2º de DAM**.
 
-## Step 4: Adding Sprites and Characters
+Durante el desarrollo, me percaté de que no había ningún proyecto que clonara tan **meticulosamente** la interfaz de Spotify.
 
-To add a character or object to your scene, you'll need to add a Sprite node. Download or create a simple 2D character sprite and import it into Godot. Then, drag and drop the sprite file onto your Sprite node in the scene.
+</div>
 
-![Adding Sprite in Godot](https://example.com/adding-sprite-godot.png)
+<h3 tab="1">Inconvenientes:</h3>
 
-## Step 5: Basic Scripting
+<div tab="2">
 
-Godot uses GDScript, a Python-like language, for scripting game logic. To add behavior to your character, right-click on the Sprite node and select 'Attach Script'. In the script editor, you can write simple commands to control the character's actions.
+A consecuencia de que estaba consumiendo la **API propietaria de Spotify** y deseaba hacer un **calco 1:1 de su interfaz**, **no me otorgaron los permisos para usar la API de manera pública**, restringiendo su uso estrictamente para el desarrollo. Por lo tanto, **a menos que cambie la API de música, no podré desplegar esta aplicación web para todo el público**.
 
-## Step 6: Running Your Game
 
-To see your game in action, click the 'Play' button at the top of the screen. If you haven't set a main scene yet, Godot will prompt you to select one. Choose your newly created scene and watch your character come to life!
+</div>
 
-![Running Game in Godot](https://example.com/running-game-godot.png)
+---
 
-## Conclusion
+## 2. Arquitectura del Sistema
 
-Creating a basic game in Godot 4 is a fun and rewarding experience. This beginner's guide should help you get started on your game development journey. As you become more comfortable with Godot's features, you'll be able to create more complex and engaging games.
+- **Guardado del token de sesión**.
+- **Uso de ActiveGuards**.
+- **Uso de nueva sintaxis de Angular 17**.
+- **Cargas lazy con esqueletos de imágenes y contenido**.
 
-Remember, game development is a learning process, so don't hesitate to experiment and explore the capabilities of Godot 4. Happy game developing!
+---
 
-For more detailed tutorials, check out [Godot 4 Documentation](https://docs.godotengine.org/en/stable/).
+## 3. Desafíos y Soluciones
+
+Uno de los desafíos con los que me encontré fue que, al igual que hacía **Spotify Web**, quería que, dependiendo del **ancho de la pantalla**, se **renderizara** o se dejaran de renderizar tantas **columnas**. Esto no estaría calculado mediante **CSS**, ya que el objetivo era que dejara de **renderizarse el componente en sí**, y no tanto el mostrar más o menos columnas. Lo implementé mediante **TypeScript**.
+
+
+<img jpg src="https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/spotify_clon/SectionsGift.gif?raw=true">
+
+<h3 tab="1"> Ejemplo de Código:</h3>
+<div tab="2">
+
+A continuación, se muestra el **código utilizado** dentro del componente que dibuja la sección:
+
+Lo que hicimos fue **referenciar el elemento contenedor** de las "tarjetas" y, mediante el evento `Resize`, **calculamos cuántas tarjetas caben** en base al tamaño del contenedor (`n / 190`), donde `190` es el **ancho de cada tarjeta**.
+
+Por último, al objeto **`wrapper`** que será utilizado para la **iteración en el HTML**, le agregamos tantos elementos como columnas resulten de este cálculo.
+
+
+
+```typescript
+@ViewChild('container') 
+container!: ElementRef;
+
+@HostListener('window:resize', ['$event'])
+onResize(event: any) {
+  const cols = Math.floor(this.container.nativeElement.offsetWidth / 190);
+  this.wrapper = [];
+
+  this.section.items?.forEach((item: ReduceData, index: number) => {
+    if(index < cols){
+      this.wrapper.push(item);
+    }
+  });
+}
+```
+</div>
+
+---
+## 4. Futuro del proyecto
+
+Actualmente, se podría decir que **este proyecto no está finalizado**, al menos hasta que cualquier persona pueda **probar e interactuar con la página**.
+
+Aunque este proyecto aún se encuentra **pendiente**, me gustaría **cambiar la API** que consume por otra de acceso **libre y gratuito**, como la de **Audius**. El problema al que me enfrentaría es que tengo **mi modelo de datos construido en base a la API de Spotify**, y requeriría **un trabajo adicional** realizar el cambio, pero **merecería la pena**.

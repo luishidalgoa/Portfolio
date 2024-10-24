@@ -72,6 +72,10 @@ body {
     @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800 max-w-80; /* Imágenes */
   }
 
+  img[png] {
+    @apply relative h-auto w-full min-w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
+  }
+
   table {
     @apply rounded-lg border overflow-hidden bg-white dark:bg-gray-800 max-w-full border-collapse mb-4; /* Tablas */
   }
