@@ -12,7 +12,7 @@ type: 'BackEnd'
 
 ## Enlaces
 - [Github + script docker para el despliegue](https://github.com/luishidalgoa/SpringBootMicroservice)
-- [Documentación Api: Microservice-Courses-Students - Team Workspace](https://galactic-crescent-156854.postman.co/workspace/6e7e21b0-4367-49af-8246-fc3174491d32/documentation/31150730-7669aff2-2597-4fae-970b-1375dcc5d398)
+- [Documentación Api: Ficharo Json Postman](https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/Spring-microservices/Microservice-Courses.json)
 
 ## Introducción
 
@@ -55,7 +55,7 @@ La documentación es crucial para la comprensión y uso de la API. En este proye
 <div tab="3">
 Puedes acceder a la documentación pública de la API en Postman mediante el siguiente enlace:
 
-- [Postman Documentation Link](https://galactic-crescent-156854.postman.co/workspace/6e7e21b0-4367-49af-8246-fc3174491d32/documentation/31150730-7669aff2-2597-4fae-970b-1375dcc5d398) 
+- [Postman Documentation JSON](https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/Spring-microservices/Microservice-Courses.json) 
 
 </div>
 

@@ -14,7 +14,7 @@ export class TecnologiasComponent {
     {name: 'SpringBoot'},
     {name: 'SpringSecurity'},
     {name: 'Java'},
-    {name: 'Python'},
+    {name: 'PHP'},
     {name: 'TailwindCSS'},
     {name: 'Typescript'},
     {name: 'MySQL'},
