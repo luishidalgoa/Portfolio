@@ -12,7 +12,7 @@
             </svg>
         </div>
         <img (load)="onImageLoad()" [ngClass]="{'hidden': !imageLoaded,
-            'transition duration-500': imageLoaded,'hover:scale-110 w-full h-auto  transition-transform p-2 relative': true,'h-full w-auto': position!=='end','object-contain': position==='end'}"
+            'transition duration-500': imageLoaded,'hover:scale-110 h-auto w-auto transition-transform p-2 relative': true,'h-full': position!=='end','object-contain': position==='end'}"
             [ngSrc]="card.imageUrl" alt=""  priority width="1" height="1"/>
 
     </div>

@@ -1,9 +1,11 @@
 import { NgModule, SecurityContext } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArticlesRoutingModule } from './articles-routing.module';
-import { MarkdownModule } from 'ngx-markdown';
-import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { CLIPBOARD_OPTIONS, MarkdownModule, provideMarkdown } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
+import { ClipboardButtonComponentComponent } from '../shared/components/markdown/clipboard-button-component/clipboard-button-component.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     ArticlesRoutingModule,
     HttpClientModule,
-    MarkdownModule.forRoot(),
+    SharedModule
   ]
 })
 export class ArticlesModule { }

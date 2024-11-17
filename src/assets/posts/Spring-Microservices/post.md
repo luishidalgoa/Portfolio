@@ -87,7 +87,7 @@ Una vez que tengas Docker y Docker Compose instalados, puedes levantar la infrae
 </div>
 
 ```bash
-docker-compose up
+docker compose up
 ```
 ---
 ## Desafíos y Aprendizajes

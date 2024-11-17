@@ -86,10 +86,14 @@ export class PostsService {
   getContent(url: string): Promise<string> {
     return new Promise((resolve, reject) => {
       this.http.get(url, { responseType: 'text' }).subscribe({
-        next: data => {
-          resolve(marked(matter(data).content))
-        }
-      })
-    })
+        next: (data) => {
+          const content = marked(matter(data).content);
+          resolve(content); // Devuelves el contenido procesado
+        },
+        error: (error) => {
+          reject(error);
+        },
+      });
+    });
   }
 }

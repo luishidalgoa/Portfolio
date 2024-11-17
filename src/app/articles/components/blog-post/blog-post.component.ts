@@ -1,8 +1,9 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, TemplateRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PostsService } from '../../services/posts.service';
 import { Proyect } from '../../../Home/models/proyect';
 import * as AOS from 'aos';
+import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
   selector: 'app-blog-post',
@@ -13,7 +14,7 @@ export class BlogPostComponent {
   public url!:string
   public post!:Proyect;
 
-  @ViewChild('markdown') markdown!: any
+  @ViewChild('markdown') markdown!: MarkdownComponent
   constructor(private _router: ActivatedRoute, private _postS: PostsService){}
 
   ngOnInit(){
@@ -22,11 +23,15 @@ export class BlogPostComponent {
     this._postS.getPost(this.url).then((data:Proyect) => {
       this.post = data
     })
-    this._postS.getContent(`assets/posts/${this.url}/post.md`).then((data:string) => {
-      this.markdown.element.nativeElement.innerHTML = data
-    })
-
+    this.getContent();
     //rehubicaremos la vista al principio de la pagina cuando se cargue el componente
     window.scrollTo(0, 0)
   }
+  markdownContent!: string;
+  getContent(){
+    this._postS.getContent(`assets/posts/${this.url}/post.md`).then((data:string) => {
+      this.markdownContent = data;
+    })
+  }
+
 }

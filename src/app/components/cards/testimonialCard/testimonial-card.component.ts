@@ -43,6 +43,5 @@ export class TestimonialCard {
   imageLoaded = false;
   onImageLoad() {
     this.imageLoaded = true;
-    console.log(this.imageLoaded);
   }
 }

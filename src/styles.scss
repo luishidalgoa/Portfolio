@@ -56,14 +56,6 @@ body {
     }
   }
 
-  code {
-    @apply bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded px-1 py-0.5; /* Código en línea */
-  }
-
-  pre {
-    @apply bg-gray-200 dark:bg-gray-800 p-4 rounded overflow-x-auto; /* Bloques de código */
-  }
-
   img[jpg] {
     @apply relative h-auto w-full min-w-full object-cover rounded-lg dark:shadow-gray-800 shadow-lg; /* Imágenes */
   }
