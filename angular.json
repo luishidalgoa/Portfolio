@@ -39,7 +39,7 @@
             "styles": [
               "src/styles.scss",
               "node_modules/aos/dist/aos.css",
-              "node_modules/prismjs/themes/prism-dracula.css",
+              "src/assets/prismjs-themes/prism-darcula.css",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css"
             ],
             "scripts": [
