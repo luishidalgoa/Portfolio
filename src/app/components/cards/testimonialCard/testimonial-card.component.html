@@ -6,14 +6,14 @@
             class="absolute top-4 left-4 backdrop-blur-md bg-dark-600/50 py-1 px-2 rounded-full z-10 text-sm font-semibold text-dark-100 ">
             <p>{{card.type}}</p>
         </span>
-        <div [ngClass]="{'hidden': imageLoaded}" class="flex items-center justify-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
+        <div [ngClass]="{'hidden': imageLoaded}" class="animate-pulse flex items-center justify-center w-full h-auto bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
             <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
                 <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"/>
             </svg>
         </div>
         <img (load)="onImageLoad()" [ngClass]="{'hidden': !imageLoaded,
             'transition duration-500': imageLoaded,'hover:scale-110 w-full h-auto  transition-transform p-2 relative': true,'h-full w-auto': position!=='end','object-contain': position==='end'}"
-            [src]="card.imageUrl" alt=""  />
+            [ngSrc]="card.imageUrl" alt=""  priority width="1" height="1"/>
 
     </div>
     <div class="overflow-ellipsis flex flex-col" [ngClass]="{'p-5':true, 'md:h-[calc(100%-162.5px)]': position!=='end', 'sm:w-1/2': position==='end'}">

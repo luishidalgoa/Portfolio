@@ -4,7 +4,9 @@
     <div
     class="mt-6 grid grid-cols-1 border rounded-lg overflow-hidden border-gray-200 shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
     @for (card of posts; track $index) {
-        <card-testimonialCard [ngClass]="{'md:col-span-2': $index === posts.length - 1 && (posts.length -1) %2 === 0}" [card]="card" [indices]="{$index, posts: posts.length}"></card-testimonialCard>
+        @defer (on idle) {
+            <card-testimonialCard [ngClass]="{'md:col-span-2': $index === posts.length - 1 && (posts.length -1) %2 === 0}" [card]="card" [indices]="{$index, posts: posts.length}"></card-testimonialCard>
+        }
     }
 </div>
 </section>
