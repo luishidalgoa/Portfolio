@@ -2,7 +2,7 @@
 title: 'Backend Gymnastic Competition'
 articleUrl: 'BackEnd-Gymnastic-competition'
 description: 'El objetivo de este proyecto es desarrollar un gestor de competiciones de gimnasia rítmica que facilite la organización y el seguimiento de eventos deportivos. El gestor permitirá crear las pruebas y los participantes de cada competición, así como asignar el horario de cada actuación según el orden establecido.'
-imageUrl: 'https://luishidalgoa.github.io/Content/Articles/GymnasticCompetition/Logo.png'
+imageUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-c9278.appspot.com/o/BackEnd-Gymnastic-competition%2FLogo.png?alt=media&token=d6f89c6d-dc79-4b6e-8ff6-efeae989c3b8'
 tags: [Java,MySQL]
 degree: 'bg-gradient-to-r from-rose-400 to-red-500'
 type: 'FullStack'

@@ -39,4 +39,10 @@ export class TestimonialCard {
       this.url = '/'
     }
   }
+
+  imageLoaded = false;
+  onImageLoad() {
+    this.imageLoaded = true;
+    console.log(this.imageLoaded);
+  }
 }
