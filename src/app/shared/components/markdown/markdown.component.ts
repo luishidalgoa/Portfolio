@@ -18,6 +18,8 @@ export class MarkdownComponent {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    this.markdownElement.element.nativeElement.querySelectorAll('pre').forEach(pre => pre.style.maxWidth = `${document.querySelector('main')!.offsetWidth - 50}px`);
+    if(window.innerWidth < 1024){
+      this.markdownElement.element.nativeElement.querySelectorAll('pre').forEach(pre => pre.style.maxWidth = `${document.querySelector('main')!.offsetWidth - 50}px`);
+    }
   }
 }
