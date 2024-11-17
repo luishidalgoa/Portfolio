@@ -68,8 +68,7 @@ A continuación, se muestra el **código utilizado** dentro del componente que d
 Lo que hicimos fue **referenciar el elemento contenedor** de las "tarjetas" y, mediante el evento `Resize`, **calculamos cuántas tarjetas caben** en base al tamaño del contenedor (`n / 190`), donde `190` es el **ancho de cada tarjeta**.
 
 Por último, al objeto **`wrapper`** que será utilizado para la **iteración en el HTML**, le agregamos tantos elementos como columnas resulten de este cálculo.
-
-
+</div>
 
 ```typescript
 @ViewChild('container') 
@@ -87,7 +86,6 @@ onResize(event: any) {
   });
 }
 ```
-</div>
 
 ---
 ## 4. Futuro del proyecto

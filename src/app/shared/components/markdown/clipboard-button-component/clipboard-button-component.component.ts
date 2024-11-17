@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-clipboard-button-component',
+  selector: 'markdown-clipboard-button-component',
   templateUrl: './clipboard-button-component.component.html',
   styleUrl: './clipboard-button-component.component.scss'
 })
