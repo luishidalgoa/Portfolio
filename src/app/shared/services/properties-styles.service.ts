@@ -4,10 +4,15 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class DarkModeService {
+export class PropertiesService {
 
   public darkMode!: BehaviorSubject<boolean>;
+  public particlesJs: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   constructor() {
+    this.initDarkMode();
+  }
+  
+  initDarkMode() {
     if (typeof window !== 'undefined' && localStorage) {
       const darkModeInLocalStorage = localStorage.getItem('darkMode');
   
@@ -23,8 +28,6 @@ export class DarkModeService {
       this.darkMode = new BehaviorSubject<boolean>(false); // Valor por defecto en caso de no estar en un navegador
     }
   }
-  
-  
   /**
    * Changes the current value of the dark mode observable to the opposite one.
    * @returns An observable with the new value of the dark mode.
@@ -32,6 +35,15 @@ export class DarkModeService {
   public changeDarkMode() {
     this.darkMode.next(!this.darkMode.value);
     localStorage.setItem('darkMode', String(this.darkMode.value));
+  }
+
+  updateStatusParticlesJs(status: boolean) {
+    if(!this.particlesJs) {
+      this.particlesJs = new BehaviorSubject<boolean>(status);
+    }else{
+      this.particlesJs.next(status);
+    }
+    
   }
 
 }

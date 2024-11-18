@@ -36,6 +36,7 @@ export class PostsService {
                   tags = [],
                   degree = '',
                   type = '',
+                  date = ''
                 } = matter(markdownFile).data;
                 return {
                   title,
@@ -44,7 +45,8 @@ export class PostsService {
                   imageUrl,
                   tags,
                   degree,
-                  type
+                  type,
+                  date
                 }
               })
             },
@@ -68,6 +70,7 @@ export class PostsService {
             tags = [],
             degree = '',
             type = '',
+            date = ''
           } = matter(data).data;
           resolve({
             title,
@@ -76,7 +79,8 @@ export class PostsService {
             imageUrl,
             tags,
             degree,
-            type
+            type,
+            date
           })
         }
       })

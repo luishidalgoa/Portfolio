@@ -1,5 +1,5 @@
-import { Component, inject, OnChanges, OnInit, Renderer2, SimpleChanges } from '@angular/core';
-import { DarkModeService } from './shared/services/dark-mode.service';
+import { Component, inject, OnInit, Renderer2, ChangeDetectorRef } from '@angular/core';
+import { PropertiesService } from './shared/services/properties-styles.service';
 declare var particlesJS: any;
 
 @Component({
@@ -7,29 +7,46 @@ declare var particlesJS: any;
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'Portfolio';
-  darkmode!:boolean;
+  darkmode!: boolean;
+  particlesJS: boolean = false;
 
-  public dark_mode: DarkModeService = inject(DarkModeService)
-  public renderer = inject(Renderer2)
-  
+  public propertiesS: PropertiesService = inject(PropertiesService);
+  public renderer = inject(Renderer2);
+  public cdr = inject(ChangeDetectorRef); // Inyecta el ChangeDetectorRef
+
   ngOnInit(): void {
-    this.dark_mode.darkMode.subscribe(darkMode => {
-      this.darkmode = darkMode
-    })
-    this.loadParticlesScript().then(() => {
-      this.dark_mode.darkMode.subscribe(darkMode => {
-        if(darkMode) {
-          particlesJS.load('particles-js', 'assets/dark-particlesjs-config.json', null);
-        }else {
-          particlesJS.load('particles-js', 'assets/light-particlesjs-config.json', null);
-        }
-      })
-    }).catch(error => {
-      console.error('Error loading particlesJS:', error);
+    this.propertiesS.darkMode.subscribe(darkMode => {
+      setTimeout(() => {
+        this.darkmode = darkMode;
+        this.cdr.detectChanges(); // Forzar la detección de cambios
+      });
+    });
+
+    this.propertiesS.particlesJs.subscribe(particlesJs => {
+      this.particlesJS = particlesJs;
+      this.cdr.detectChanges(); // Forzar la detección de cambios
+      if (particlesJs) {
+        this.loadParticlesScript().then(() => {
+          this.propertiesS.darkMode.subscribe(darkMode => {
+            if (darkMode) {
+              particlesJS.load('particles-js', 'assets/dark-particlesjs-config.json', null);
+            } else {
+              particlesJS.load('particles-js', 'assets/light-particlesjs-config.json', null);
+            }
+          });
+        }).catch(error => {
+          console.error('Error loading particlesJS:', error);
+        });
+      }
     });
   }
+
+  ngAfterViewInit(): void {
+    // Si necesitas hacer algo después de la inicialización de la vista
+  }
+
   loadParticlesScript(): Promise<void> {
     return new Promise((resolve, reject) => {
       const script = this.renderer.createElement('script');
@@ -39,5 +56,4 @@ export class AppComponent implements OnInit{
       this.renderer.appendChild(document.body, script);
     });
   }
-  
 }

@@ -7,5 +7,6 @@ export interface Proyect {
     imageUrl: string;
     tags:Technologies[];
     degree?:string,
-    type: 'FullStack' | 'FrontEnd' | 'BackEnd' | 'Big Data'
+    type: 'FullStack' | 'FrontEnd' | 'BackEnd' | 'Big Data',
+    date: Date
 }

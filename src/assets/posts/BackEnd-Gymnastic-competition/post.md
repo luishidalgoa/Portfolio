@@ -6,6 +6,7 @@ imageUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-c9278.appspot.c
 tags: [Java,MySQL]
 degree: 'bg-gradient-to-r from-rose-400 to-red-500'
 type: 'FullStack'
+date: '2023-03-23'
 ---
 
 ## Enlaces:

@@ -1,9 +1,10 @@
 import { Component, ElementRef, TemplateRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PostsService } from '../../services/posts.service';
 import { Proyect } from '../../../Home/models/proyect';
 import * as AOS from 'aos';
 import { MarkdownComponent } from 'ngx-markdown';
+import { PostsService } from '../../../shared/services/posts.service';
+import { PropertiesService } from '../../../shared/services/properties-styles.service';
 
 @Component({
   selector: 'app-blog-post',
@@ -15,9 +16,11 @@ export class BlogPostComponent {
   public post!:Proyect;
 
   @ViewChild('markdown') markdown!: MarkdownComponent
-  constructor(private _router: ActivatedRoute, private _postS: PostsService){}
+  constructor(private _router: ActivatedRoute, private _postS: PostsService,private _propertiesS: PropertiesService){}
 
   ngOnInit(){
+    this._propertiesS.updateStatusParticlesJs(false);
+
     AOS.init();
     this.url = this._router.snapshot.params['postId']
     this._postS.getPost(this.url).then((data:Proyect) => {

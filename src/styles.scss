@@ -55,6 +55,9 @@ body {
       @apply mb-0;
     }
   }
+  pre{
+    @apply rounded-md
+  }
 
   img[jpg] {
     @apply relative h-auto w-full min-w-full object-cover rounded-lg dark:shadow-gray-800 shadow-lg; /* Imágenes */

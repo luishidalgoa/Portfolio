@@ -6,7 +6,7 @@ imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfol
 tags: [Angular,SpringBoot,MySQL,Tailwind,Sass]
 degree: 'from-blue-800 to-indigo-900'
 type: 'FullStack'
-
+date: '2024-06-23'
 ---
 
 ## Enlaces:

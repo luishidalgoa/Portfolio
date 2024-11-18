@@ -8,7 +8,7 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
-import { ViewAllProjectsComponent } from '../articles/components/view-all-projects/view-all-projects.component';
+import { ViewAllProjectsComponent } from '../articles/pages/view-all-projects/view-all-projects.component';
 import { RouterLink } from '@angular/router';
 
 

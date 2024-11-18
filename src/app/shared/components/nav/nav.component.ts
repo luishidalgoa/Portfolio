@@ -1,5 +1,5 @@
 import { Component, HostListener, inject, OnInit, Renderer2 } from '@angular/core';
-import { DarkModeService } from '../../services/dark-mode.service';
+import { PropertiesService } from '../../services/properties-styles.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -8,12 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent implements OnInit {
-  public dark_mode = inject(DarkModeService);
+  public propertiesS = inject(PropertiesService);
   public darkMode: boolean = false;
   bars: boolean = false;
 
   toggleTheme() {
-    this.dark_mode.changeDarkMode();
+    this.propertiesS.changeDarkMode();
   }
 
   toggleBars() {
@@ -32,7 +32,7 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
     this.setActiveClass();
-    this.dark_mode.darkMode.subscribe(darkMode => {
+    this.propertiesS.darkMode.subscribe(darkMode => {
       this.darkMode = darkMode;
     });
   }

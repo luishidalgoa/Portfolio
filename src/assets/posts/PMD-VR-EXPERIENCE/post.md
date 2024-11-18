@@ -6,6 +6,7 @@ imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfol
 tags: [Unity,C#]
 degree: 'from-violet-400 to-purple-300'
 type: 'FullStack'
+date: '2023-09-18'
 ---
 <img jpg src="https://media.licdn.com/dms/image/v2/D4D12AQGISiSXGRYyog/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1697729739915?e=1735171200&v=beta&t=p3_2HP-LjKiKi1TnJxKACS_82g3Zs6w-yJ2BxJmb6M4">
 

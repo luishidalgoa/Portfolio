@@ -6,6 +6,7 @@ imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfol
 tags: [Angular]
 degree: 'from-violet-500 to-orange-300'
 type: 'FrontEnd'
+date: '2023-12-23'
 ---
 
 <img png src="https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/spotify_clon.png?raw=true">

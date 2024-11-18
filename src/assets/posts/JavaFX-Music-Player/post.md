@@ -6,6 +6,7 @@ imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfol
 tags: [Angular]
 degree: 'bg-gradient-to-r from-cyan-400 to-blue-500'
 type: 'FullStack'
+date: '2023-11-13'
 ---
 
 <img jpg src="https://media.licdn.com/dms/image/v2/D4D12AQFlGRzlwSaW3Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699915090980?e=1735171200&v=beta&t=L039a0Q_46Z2X8qji3woZgqr_brYycX4nmyMTvFhj00">

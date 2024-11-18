@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Proyect } from '../models/proyect';
-import { PostsService } from '../../articles/services/posts.service';
+import { PostsService } from '../../shared/services/posts.service';
 @Component({
   selector: 'home-proyectos',
   templateUrl: './proyectos.component.html',

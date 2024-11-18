@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import * as AOS from 'aos';
+import { PropertiesService } from '../../../shared/services/properties-styles.service';
 @Component({
   selector: 'Home-home',
   templateUrl: './home.component.html',
@@ -7,9 +8,11 @@ import * as AOS from 'aos';
 })
 export class HomeComponent {
 
-  constructor() { }
+  constructor(private propertiesS:PropertiesService) { }
 
   ngOnInit(): void {
+    this.propertiesS.updateStatusParticlesJs(true);
+
     AOS.init();
   }
   

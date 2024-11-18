@@ -4,8 +4,9 @@ articleUrl: 'Spring-Microservices'
 description: 'En este proyecto, enfoqué mis esfuerzos en crear una aplicación orientada a microservicios con Spring Boot, dejando atrás la estructura monolítica.'
 imageUrl: 'https://media.licdn.com/dms/image/v2/D4D12AQGVon2ws6Bcsw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1730120282633?e=1735776000&v=beta&t=DWa17bPMYXhSiYubru_59yoxs9Iy71ts5CVO1xSFA0k'
 tags: [Spring Boot, Docker, Swagger]
-degree: ''
+degree: 'bg-white'
 type: 'BackEnd'
+date: '2024-09-28'
 ---
 
 # Creando una Aplicación con Arquitectura Orientada a Microservicios: Un Proyecto Práctico
