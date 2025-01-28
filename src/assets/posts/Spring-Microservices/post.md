@@ -2,7 +2,7 @@
 title: 'Spring Microservices'
 articleUrl: 'Spring-Microservices'
 description: 'En este proyecto, enfoqué mis esfuerzos en crear una aplicación orientada a microservicios con Spring Boot, dejando atrás la estructura monolítica.'
-imageUrl: 'https://media.licdn.com/dms/image/v2/D4D12AQGVon2ws6Bcsw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1730120282633?e=1735776000&v=beta&t=DWa17bPMYXhSiYubru_59yoxs9Iy71ts5CVO1xSFA0k'
+imageUrl: 'http://luishidalgoa.ddns.net:9001/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProyecto%20de%20Microservicios%20en%20Spring%2FPortada.png&version_id=null'
 tags: [Spring Boot, Docker, Swagger]
 degree: 'bg-white'
 type: 'BackEnd'
