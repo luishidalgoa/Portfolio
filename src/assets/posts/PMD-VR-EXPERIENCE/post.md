@@ -2,13 +2,13 @@
 title: 'Experiencia VR con Unity'
 articleUrl: 'PMD-VR-EXPERIENCE'
 description: 'Se trata de una aplicación de música hecha en JavaFX, que tiene varias funcionalidades interesantes y quha sido el resultado de un trabajo colaborativo.'
-imageUrl: 'http://luishidalgoa.ddns.net:9001/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FPMD-VR-Experience%2FPMD-VR-EXPERIENCE.png&version_id=null'
+imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FPMD-VR-Experience%2FPMD-VR-EXPERIENCE.png&version_id=null'
 tags: [Unity,C#]
 degree: 'from-violet-400 to-purple-300'
 type: 'FullStack'
 date: '2023-09-18'
 ---
-<img jpg src="http://luishidalgoa.ddns.net:9001/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FPMD-VR-Experience%2Fbanner.jpeg&version_id=null">
+<img jpg src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FPMD-VR-Experience%2Fbanner.jpeg&version_id=null">
 
 # Experiencia en Realidad Virtual (VR) realizada en Unity
 
