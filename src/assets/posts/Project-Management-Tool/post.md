@@ -2,7 +2,7 @@
 title: 'Project Management Tool'
 articleUrl: 'Project-Management-Tool'
 description: 'La usabilidad se centra en permitir a los usuarios gestionar proyectos y tareas de manera fluida y colaborativa. Desde la creación de proyectos hasta la asignación y seguimiento de tareas.'
-imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/fct_atmira.png?raw=true'
+imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2Fbanner.png&version_id=null'
 tags: [Angular,SpringBoot,MySQL,Tailwind,Sass]
 degree: 'from-blue-800 to-indigo-900'
 type: 'FullStack'
@@ -21,7 +21,7 @@ date: '2024-06-23'
 
 ## Introducción
 
-<img jpg src="https://media.licdn.com/dms/image/v2/D4D12AQGxdYXuNOW1iw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1729635503783?e=1735171200&v=beta&t=Qlh13gS1D8jDKJ08SUsr-HNO-zZHZsnk-3zh_i51XdY">
+<img jpg src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2FPortada.png&version_id=null">
 
 ## Propuesta:
 
@@ -61,7 +61,7 @@ El propósito de este proyecto era desarrollar un sistema parecido a Jira o Trel
 
 ## Guía de uso:
 
-<img jpg src="https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/Project-Management-Tool/guia_uso.gif?raw=true">
+<img jpg src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2Fguia_uso.gif&version_id=null">
 
 <h3 tab="1"> 1. Acceso e inicio de sesión:</h3>
 <p tab="2">Al acceder a la página de inicio, observarás una pantalla con los botones "Login" y "Sign in". Si no tienes cuenta, selecciona "Sign In", completa el formulario en el modal que se abre.</p>
@@ -75,7 +75,7 @@ La aplicación cuenta con una barra de navegación entre los diferentes paneles:
 - **Expense**: Permite crear un nuevo gasto o dieta asociada a un proyecto, o dirigirte al panel de gastos con un desglose completo de los reportados.
 
 <span style="display:flex;justify-content:center;">
-<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQGdkdDnSZa4LA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729682347648?e=1735171200&v=beta&t=dOXVbiydbQpzp7lCpqlmUUSq3jTn45XOGEinaSEvl7I">
+<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F1.png&version_id=null">
 </span>
 </div>
 
@@ -83,14 +83,14 @@ La aplicación cuenta con una barra de navegación entre los diferentes paneles:
 <div tab="2">
 En esta vista puedes observar un desglose de todos los proyectos en los que participas. También puedes editar o borrar proyectos.
 <span style="display:flex;justify-content:center;">
-<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQHZ0uh7LaDjnA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729683416750?e=1735171200&v=beta&t=OPYJJ-cVGk3E2YEt8SKpUwZIEVrAMpHr1-PV-FJkayw">
+<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F2.png&version_id=null">
 </span>
 </div>
 
 <h3 tab="1"> 4. Vista general de un proyecto:</h3>
 <div tab="2">Al acceder a un proyecto, verás las tareas asociadas. Cada tarea puede tener subtareas, y ambas pueden ser asignadas a colaboradores.
 <span style="display:flex;justify-content:center;">
-<img style="min-width:100%;" style="" src="https://media.licdn.com/dms/image/v2/D4D12AQHRlkBHzZw07w/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685141794?e=1735171200&v=beta&t=RtZ55_YKMOSTdNCh5pLadJq0_-sbMDnw1W3VbBoakXo">
+<img style="min-width:100%;" style="" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F3.png&version_id=null">
 </span>
 </div>
 
@@ -98,7 +98,7 @@ En esta vista puedes observar un desglose de todos los proyectos en los que part
 <h3 tab="1"> 5. Edición de tareas y subtareas:</h3>
 <div tab="2">Puedes actualizar la información de tareas y subtareas a través del menú desplegable de tres puntos. Cambia el estado, el tipo de tarea o asigna la tarea a otro usuario.
 <span style="display:flex;justify-content:center;">
-<img src="https://media.licdn.com/dms/image/v2/D4D12AQGsxR4hN2IaRw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685648238?e=1735171200&v=beta&t=g8n2-QxKr_7nZqMnn4GbM7DW2nHxMjiAIEM3D79ZXVE">
+<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F4.png&version_id=null">
 </span>
 </div>
 
@@ -107,7 +107,7 @@ En esta vista puedes observar un desglose de todos los proyectos en los que part
 
 Dentro de un proyecto, el botón "**_Expensive_**" muestra los gastos creados por colaboradores, para que como administrador del proyecto, decidas si aprobar o denegar el reembolso.
 <span style="display:flex;justify-content:center;">
-<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQGkoAYpMUb4gA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685887327?e=1735171200&v=beta&t=NKiagj2BervsBjrqam8Ok-ojJqFKEX_nrgc89EZl-QM">
+<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F5.png&version_id=null">
 </span>
 </div>
 
@@ -117,7 +117,7 @@ Dentro de un proyecto, el botón "**_Expensive_**" muestra los gastos creados po
 
 En **_Expense -> View all_** podrás visualizar todas las incidencias de gasto generadas por ti, con información sobre el estado de resolución y el proyecto correspondiente.
 <span style="display:flex;justify-content:center;">
-<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQHykAyyhAed5A/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729685968197?e=1735171200&v=beta&t=dKYNcTv5G8-4KCOKrQ-DlFc1h64cGq8SwIyJ5G5_x0k">
+<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F6.png&version_id=null">
 </span>
 </div>
 
@@ -148,11 +148,11 @@ Este proyecto ha requerido conocimientos avanzados tanto de Front-End como de Ba
 ## Arquitectura:
 
 <h3 tab="1"> Paso a tablas de E/R:
-<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQEoeO7Wvr6yqw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729686803784?e=1735171200&v=beta&t=LiOISy2oe0-KtQnYNBGvo3GtRYH-z2wAtGV5W5shQCo">
+<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F7.png&version_id=null">
 </h3>
 
 <h3 tab="2">Diagrama de flujo: 
-<img style="min-width:100%;" src="https://media.licdn.com/dms/image/v2/D4D12AQHSdEKniMiIlg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1729686981389?e=1735171200&v=beta&t=ecvMFZ4eIOdVAGHnkDFJJ3C4Jm8Tol_PtTdK53Mb08E">
+<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F8.png&version_id=null">
 </h3>
 
 

@@ -2,14 +2,14 @@
 title: 'Spotify Clon'
 articleUrl: 'Spotify-Clon'
 description: 'Proyecto realizado con el objetivo de demostrar mis capacidades avanzadas en Angular. Desarrolle unaplicación que consume la API de Spotify e intenta replicar varias de las funcionalidades de la propia Spotify de lforma mas fiel y cuidadosamente posible'
-imageUrl: 'https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/spotify_clon.png?raw=true'
+imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSpotify_Clon%2Fspotify_clon.png&version_id=null'
 tags: [Angular]
 degree: 'from-violet-500 to-orange-300'
 type: 'FrontEnd'
 date: '2023-12-23'
 ---
 
-<img png src="https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/spotify_clon.png?raw=true">
+<img png src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSpotify_Clon%2Fspotify_clon.png&version_id=null">
 
 # Enlaces:
 - **Repositorio:** [Github](https://github.com/luishidalgoa/Spotify_Clon)
@@ -59,7 +59,7 @@ A consecuencia de que estaba consumiendo la **API propietaria de Spotify** y des
 Uno de los desafíos con los que me encontré fue que, al igual que hacía **Spotify Web**, quería que, dependiendo del **ancho de la pantalla**, se **renderizara** o se dejaran de renderizar tantas **columnas**. Esto no estaría calculado mediante **CSS**, ya que el objetivo era que dejara de **renderizarse el componente en sí**, y no tanto el mostrar más o menos columnas. Lo implementé mediante **TypeScript**.
 
 
-<img jpg src="https://github.com/luishidalgoa/luishidalgoa/blob/main/Images/portfolio/spotify_clon/SectionsGift.gif?raw=true">
+<img jpg src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSpotify_Clon%2FSectionsGift.gif&version_id=null">
 
 <h3 tab="1"> Ejemplo de Código:</h3>
 <div tab="2">
