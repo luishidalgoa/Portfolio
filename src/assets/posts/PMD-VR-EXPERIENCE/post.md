@@ -4,7 +4,7 @@ articleUrl: 'PMD-VR-EXPERIENCE'
 description: 'Se trata de una aplicación de música hecha en JavaFX, que tiene varias funcionalidades interesantes y quha sido el resultado de un trabajo colaborativo.'
 imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FPMD-VR-Experience%2FPMD-VR-EXPERIENCE.png&version_id=null'
 tags: [Unity,C#]
-degree: 'from-violet-400 to-purple-300'
+degree: 'from-violet-400 to-purple-300 bg-gradient-to-t'
 type: 'FullStack'
 date: '2023-09-18'
 ---
