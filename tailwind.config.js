@@ -71,7 +71,7 @@ module.exports = {
     'dark:shadow-gray-800',
     'to-pink-500',
     'from-blue-500',
-    'bg-gradient-to-r'
+    'bg-gradient-to-tl'
   ],
   plugins: [],
 }
