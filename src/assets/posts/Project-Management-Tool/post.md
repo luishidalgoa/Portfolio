@@ -4,7 +4,7 @@ articleUrl: 'Project-Management-Tool'
 description: 'La usabilidad se centra en permitir a los usuarios gestionar proyectos y tareas de manera fluida y colaborativa. Desde la creación de proyectos hasta la asignación y seguimiento de tareas.'
 imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2Fbanner.png&version_id=null'
 tags: [Angular,SpringBoot,MySQL,Tailwind,Sass]
-degree: 'from-blue-800 to-indigo-900'
+degree: 'from-blue-800 to-indigo-900 bg-gradient-to-t'
 type: 'FullStack'
 date: '2024-06-23'
 ---
