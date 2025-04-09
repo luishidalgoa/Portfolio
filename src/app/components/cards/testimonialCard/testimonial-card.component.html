@@ -1,7 +1,7 @@
 <a [routerLink]="[url, 'articles', card.articleUrl]"
     [ngClass]="{'cursor-pointer flex h-full border border-gray-200 dark:bg-gray-800 dark:border-gray-700 flex-col':true, 'md:flex-row-reverse md:col-span-2': position==='end'}">
     <div data-aos="flip-left" class="relative {{card.degree}}"
-        [ngClass]="{'p-2 bg-gradient-to-t overflow-hidden flex justify-center h-52': true,'md:h-44': position!=='end', 'sm:w-1/2 md:h-auto': position==='end'}">
+        [ngClass]="{'p-2 overflow-hidden flex justify-center h-52': true,'md:h-44': position!=='end', 'sm:w-1/2 md:h-auto': position==='end'}">
         <span
             class="absolute top-4 left-4 backdrop-blur-md bg-dark-600/50 py-1 px-2 rounded-full z-10 text-sm font-semibold text-dark-100 ">
             <p>{{card.type}}</p>
