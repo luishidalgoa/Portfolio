@@ -4,7 +4,7 @@ articleUrl: 'Spotify-Clon'
 description: 'Proyecto realizado con el objetivo de demostrar mis capacidades avanzadas en Angular. Desarrolle unaplicación que consume la API de Spotify e intenta replicar varias de las funcionalidades de la propia Spotify de lforma mas fiel y cuidadosamente posible'
 imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSpotify_Clon%2Fspotify_clon.png&version_id=null'
 tags: [Angular]
-degree: 'from-violet-500 to-orange-300'
+degree: 'from-violet-500 to-orange-300 bg-gradient-to-t'
 type: 'FrontEnd'
 date: '2023-12-23'
 ---
