@@ -68,7 +68,8 @@ module.exports = {
     'to-blue-500',
     'from-rose-400',
     'to-red-500',
-    'dark:shadow-gray-800'
+    'dark:shadow-gray-800',
+    'from-pink-500'
   ],
   plugins: [],
 }
