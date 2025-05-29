@@ -11,6 +11,8 @@ export class TecnologiasComponent {
   techs: { name: string}[] = [
     {name: 'Angular'},
     {name: 'RxJS'},
+    {name: 'NodeJS'},
+    {name: 'ExpressJS'},
     {name: 'SpringBoot'},
     {name: 'SpringSecurity'},
     {name: 'Java'},
@@ -22,9 +24,9 @@ export class TecnologiasComponent {
     {name: 'Git'},
     {name: 'Jest'},
     {name: 'Docker'},
+    {name: 'Share Point'},
     {name: 'Power Automate'},
     {name: 'Power Apps'},
-    {name: 'Share Point'},
   ]
 
   @ViewChildren('techDiv') techDivs!: QueryList<ElementRef>; //obtenemos todos los elementos con la coincidencia del selector
