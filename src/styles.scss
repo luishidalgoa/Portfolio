@@ -55,20 +55,25 @@ body {
       @apply mb-0;
     }
   }
-  pre{
-    @apply rounded-md
+  pre {
+    @apply rounded-md;
+  }
+  code:not([class]) {
+    @apply bg-gray-100 dark:bg-gray-700/60 text-black dark:text-white rounded;
   }
 
   img[jpg] {
-    @apply relative h-auto w-full min-w-full object-cover rounded-lg dark:shadow-gray-800 shadow-lg; /* Imágenes */
+    @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800 shadow-lg; /* Imágenes */
   }
 
   img {
-    @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800 max-w-80; /* Imágenes */
+    @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
+    display: block;
+    margin: 0 auto;
   }
 
   img[png] {
-    @apply relative h-auto w-full min-w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
+    @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
   }
 
   table {
@@ -91,7 +96,13 @@ body {
       margin-left: #{2 * pow(2 * $i, 2)}px;
     }
   }
-  
+
+  @for $i from 1 through 10 {
+    img[size="#{$i}"] {
+      width: #{5 * pow(2 * $i, 1.8)}px;
+      height: auto;
+    }
+  }
   @function pow($base, $exponent) {
     $result: 1;
     @for $i from 1 through $exponent {
@@ -99,7 +110,7 @@ body {
     }
     @return $result;
   }
-  div{
+  div {
     @apply text-black/70 dark:text-white/70;
   }
 }

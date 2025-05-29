@@ -58,21 +58,25 @@ module.exports = {
     },
   },
   safelist: [
-    'from-violet-400',
-    'to-purple-300',
-    'from-blue-800',
-    'to-indigo-900',
-    'from-violet-500',
-    'to-orange-300',
-    'from-cyan-400',
-    'to-blue-500',
-    'from-rose-400',
-    'to-red-500',
-    'dark:shadow-gray-800',
-    'to-pink-500',
-    'from-blue-500',
+    // Gradientes y combinaciones típicas
+    'bg-gradient-to-t',
     'bg-gradient-to-tl',
-    'bg-gradient-to-t'
+    'bg-gradient-to-tr',
+    'bg-gradient-to-r',
+    'bg-gradient-to-bl',
+    'bg-gradient-to-br',
+    'dark:shadow-gray-800',
+
+    // Patrones para mantener degradados dinámicos
+    {
+      pattern: /from-(cyan|rose|violet|blue|red|pink|indigo|orange|purple)-[0-9]{3}/,
+    },
+    {
+      pattern: /via-(cyan|rose|violet|blue|red|pink|indigo|orange|purple)-[0-9]{3}/,
+    },
+    {
+      pattern: /to-(cyan|rose|violet|blue|red|pink|indigo|orange|purple)-[0-9]{3}/,
+    },
   ],
   plugins: [],
 }

@@ -24,7 +24,7 @@ La gimnasia rítmica es una disciplina deportiva que requiere de una gran coordi
 En este artículo os presentamos el proyecto grupal que hemos realizado en el segundo trimestre del primer curso del ciclo formativo de grado superior de Desarrollo de Aplicaciones Multiplataforma (DAM) en el IES Francisco de los Ríos. Se trata de un gestor de competición de gimnasia rítmica basado en Java y XML, que hemos desarrollado entre Jose Javier Galan, Isabel Roldán y yo. Nuestro objetivo ha sido crear una aplicación que facilite la organización y seguimiento de eventos deportivos de esta modalidad.
 
 ## Características del gestor
-<img src="https://static.wixstatic.com/media/b8a3e7_b34e15fbed1240a39a24086fe01a6621~mv2.png/v1/fill/w_549,h_656,al_c,usm_0.66_1.00_0.01/IMG_2055_PNG.png">
+<img png size="5" src="https://static.wixstatic.com/media/b8a3e7_b34e15fbed1240a39a24086fe01a6621~mv2.png/v1/fill/w_549,h_656,al_c,usm_0.66_1.00_0.01/IMG_2055_PNG.png">
 Nuestro gestor de competición de gimnasia rítmica tiene las siguientes características:
 
 - Permite crear las pruebas y los participantes de cada competición, introduciendo los datos necesarios como el nombre, la categoría, el aparato y la dificultad.
@@ -34,7 +34,7 @@ Nuestro gestor de competición de gimnasia rítmica tiene las siguientes caracte
 - Utiliza Java como lenguaje de programación, aprovechando sus ventajas como la portabilidad, la robustez y la orientación a objetos.
 
 ## Metodología y herramientas utilizadas
-<img src="https://th.bing.com/th/id/R.d707c90e2dea107665a5e3173ed44b7f?rik=Bq188bYXZw5cLw&pid=ImgRaw&r=0">
+<img png size="5" src="https://th.bing.com/th/id/R.d707c90e2dea107665a5e3173ed44b7f?rik=Bq188bYXZw5cLw&pid=ImgRaw&r=0">
 
 Para desarrollar nuestro proyecto hemos seguido una metodología ágil basada en los principios del manifiesto ágil. Hemos trabajado en iteraciones cortas, entregando versiones funcionales del producto al final de cada una. Hemos aplicado las prácticas de integración continua, revisión de código y refactorización para asegurar la calidad del código. Hemos utilizado GitHub como plataforma para alojar nuestro repositorio remoto y facilitar el trabajo colaborativo.
 

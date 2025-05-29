@@ -147,14 +147,11 @@ Este proyecto ha requerido conocimientos avanzados tanto de Front-End como de Ba
 
 ## Arquitectura:
 
-<h3 tab="1"> Paso a tablas de E/R:
-<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F7.png&version_id=null">
-</h3>
+<h3 tab="1"> Paso a tablas de E/R:</h3>
+<img png size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F7.png&version_id=null">
 
-<h3 tab="2">Diagrama de flujo: 
-<img style="min-width:100%;" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F8.png&version_id=null">
-</h3>
-
+<h3 tab="2">Diagrama de flujo: </h3>
+<img jpg src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProject%20Management%20System%2F8.png&version_id=null">
 
 <h3 tab="1"> Requisitos FrontEnd:</h3>
 
