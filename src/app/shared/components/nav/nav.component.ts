@@ -1,4 +1,4 @@
-import { Component, HostListener, inject, OnInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { PropertiesService } from '../../services/properties-styles.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -28,7 +28,7 @@ export class NavComponent implements OnInit {
     { id: 'tecnologias', name: 'Tecnologías', isActive: false, iconClass: 'fa-laptop-code' },
   ];
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
     this.setActiveClass();
@@ -90,4 +90,19 @@ export class NavComponent implements OnInit {
   private getScrollPosition(): number {
     return window.scrollY || window.pageYOffset || 0;
   }
+
+
+
+  @ViewChild('navElement') navElement!: ElementRef;
+
+  @HostListener('document:click', ['$event'])
+  onClickOutside(event: MouseEvent): void {
+    const path = event.composedPath();
+    // busca en el array de la ruta de propagación
+    const clickedInside = path.some(el => el === this.navElement.nativeElement);
+    if (!clickedInside) {
+      this.bars = false;
+    }
+  }
+
 }
