@@ -9,6 +9,17 @@ type: 'FullStack'
 date: '2025-05-29'
 --- 
 
+# Enlaces 
+
+Github:
+[luishidalgoa/CloudStorage_Project](https://github.com/luishidalgoa/CloudStorage_Project)
+
+Docker Hub: [luishidalgoa/hidalgo-music \| Docker
+Hub](https://hub.docker.com/repository/docker/luishidalgoa/hidalgo-music/general)
+
+Página web desplegada:
+[DownloadMusicClient](https://levelcloud-music.vercel.app/)
+
 # Descripción del problema
 
 En la actualidad, los usuarios no cuentan con una forma centralizada y
@@ -35,44 +46,18 @@ fácilmente, representa una necesidad latente.
 - Limpiar archivos temporales automáticamente
 - Descargar playlists completas.
 
-# Recursos
+# Introducción 
 
-**Lenguajes**: Java 21, Python
+El microservicio "Music" es un componente especializado perteneciente al
+proyecto CloudStorage que maneja la descarga de música, procesado,
+compresión y almacenamiento del mismo. En el índice encontraras
+información relevante a cerca de como la arquitectura del proyecto y
+Microservicios
 
-**Frameworks**: Spring Boot
+# Manual de usuario
+A través de la [página web](https://levelcloud-music.vercel.app) desplegada, podrás interactuar con la interfaz, en ella introduciras la url del video o playlist de YouTube que deseas descargar. El microservicio se encargará de procesar la solicitud, descargar el contenido y almacenarlo en tu nube privada o en tu dispositivo local.
 
-**Herramientas**: Docker, Maven, Postman, IntelliJ IDEA
-
-**Plugins**: Github Copilot, Prettier, Maven
-
-**Software de terceros**:
-
-- YT-DLP: [yt-dlp/yt-dlp: A feature-rich command-line audio/video
-  downloader](https://github.com/yt-dlp/yt-dlp)
-- Ffmpeg: [Download
-  FFmpeg](https://ffmpeg.org/download.html#build-windows)
-
-# Planificacioón temporal
-
-## Sprint 1: Downloader
-
-Endpoint `/download/request`
-
-Endpoint `/download/progress/{id}` con SSE
-
-Endpoint `/download/{id}` para entrega
-
-Validaciones en Nextcloud
-
-Limpieza automática
-
-Soporte para playlists
-
-## Sprint 2: Compresión
-
-- Compresión .rar para playlists
-- Enviar al cliente
-- Optimizar tiempos internos de procesos de la aplicación
+![Gift](https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FYoutube-Music-Downloader%2FGuia-usuario.gif&version_id=null)
 
 # Diagramas
 
@@ -94,25 +79,22 @@ Soporte para playlists
 
 <img jpg src="https://github.com/user-attachments/assets/9cfbf9e2-3e58-4222-8cbb-25984d99b68b">
 
+# Recursos
 
-# Introducción 
+**Lenguajes**: Java 21, Python
 
-El microservicio "Music" es un componente especializado perteneciente al
-proyecto CloudStorage que maneja la descarga de música, procesado,
-compresión y almacenamiento del mismo. En el índice encontraras
-información relevante a cerca de como la arquitectura del proyecto y
-Microservicios
+**Frameworks**: Spring Boot
 
-# Enlaces 
+**Herramientas**: Docker, Maven, Postman, IntelliJ IDEA
 
-Github:
-[luishidalgoa/CloudStorage_Project](https://github.com/luishidalgoa/CloudStorage_Project)
+**Plugins**: Github Copilot, Prettier, Maven
 
-Docker Hub: [luishidalgoa/hidalgo-music \| Docker
-Hub](https://hub.docker.com/repository/docker/luishidalgoa/hidalgo-music/general)
+**Software de terceros**:
 
-Página web desplegada:
-[DownloadMusicClient](https://levelcloud-music.vercel.app/)
+- YT-DLP: [yt-dlp/yt-dlp: A feature-rich command-line audio/video
+  downloader](https://github.com/yt-dlp/yt-dlp)
+- Ffmpeg: [Download
+  FFmpeg](https://ffmpeg.org/download.html#build-windows)
 
 # Metodo de trabajo
 

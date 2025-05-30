@@ -75,6 +75,12 @@ body {
   img[png] {
     @apply relative h-auto w-full object-cover rounded-lg dark:shadow-gray-800; /* Imágenes */
   }
+  figcaption {
+    @apply text-center mt-2; /* Subtítulos de imágenes */
+    p{
+      @apply text-gray-500 dark:text-gray-400 underline italic text-sm
+    }
+  }
 
   table {
     @apply rounded-lg border overflow-hidden bg-white dark:bg-gray-800 max-w-full border-collapse mb-4; /* Tablas */

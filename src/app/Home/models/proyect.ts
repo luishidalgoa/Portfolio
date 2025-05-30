@@ -8,5 +8,6 @@ export interface Proyect {
     tags:Technologies[];
     degree?:string,
     type: 'FullStack' | 'FrontEnd' | 'BackEnd' | 'Big Data',
-    date: Date
+    date: Date;
+    visible?: boolean;
 }

@@ -36,7 +36,8 @@ export class PostsService {
                   tags = [],
                   degree = '',
                   type = '',
-                  date = ''
+                  date = '',
+                  visible = true
                 } = matter(markdownFile).data;
                 return {
                   title,
@@ -46,9 +47,12 @@ export class PostsService {
                   tags,
                   degree,
                   type,
-                  date
+                  date,
+                  visible
                 }
-              })
+              });
+              //eliminamos los posts que no son visibles
+              this.posts = this.posts.filter(post => post.visible);
             },
             error: error => console.error(error)
           }).add(() => resolve(this.posts))
