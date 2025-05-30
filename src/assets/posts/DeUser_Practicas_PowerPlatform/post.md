@@ -19,6 +19,8 @@ almacenes de la empresa, de una forma más rápida y sencilla.
 A continuación, vamos a explicar paso a paso la aplicación, simulando la
 creación de una nueva etiqueta.
 
+![Gift de uso](https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2FGuia-usuario.gif&version_id=null)
+
 # Pantallas de la aplicación
 
 En la aplicación tenemos dos tipos de pantallas.
