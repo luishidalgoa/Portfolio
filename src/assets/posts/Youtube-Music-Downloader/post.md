@@ -123,9 +123,10 @@ desarrollando donde quieras y como quieras.
 
 2.  Desde el IDE localizar la opción Remote Development y conectarte por
     SSH al contenedor
+    
 <img jpg size="7" src="https://github.com/user-attachments/assets/ec328e9d-974b-4d02-88e7-38a6443c9a39">
 
-3.  Como se visualiza en la captura, estarías ya conectado por SSH y
+4.  Como se visualiza en la captura, estarías ya conectado por SSH y
     tendrías acceso completo a los directorios del proyecto
 
 <img jpg src="https://github.com/user-attachments/assets/1ba237ac-5aef-4146-80ed-a8a1d455268b">
@@ -207,12 +208,9 @@ dependencia o la estructura inicien el proceso de despliegue.
 <img jpg size="8" src="https://github.com/user-attachments/assets/9b951ba8-4071-4ffd-aad7-7406f8f9d163">
 
 1.  Utiliza Oracle JDK 21
-
 2.  Ejecuta el comando de paquete Maven en el directorio del proyecto
     Spring
-
 3.  Archiva los archivos JAR compilados como artefactos
-
 4.  Genera un gráfico de dependencias para supervisar las dependencias
     del proyecto
 
@@ -242,10 +240,8 @@ La imagen resultante de la dockerización tiene algunas características
 importantes como:
 
 - Incluye solo las dependencias necesarias
-
 - Detecta el tipo de arquitectura (x64 o ARM) he instala la version del
   JDK de java correspondiente
-
 - Minimiza el tamaño final de la imagen gracias a que limpia todas las
   dependencias y ficheros innecesarios de la imagen y almacenando solo
   el la app de java resultado de la compilación
@@ -261,13 +257,10 @@ despliegue esta totalmente automatizado
 Pasos del proceso de despliegue:
 
 1.  Espera a que la imagen de docker se publique en Docker hub
-
 2.  Se conecta al servidor de producción mediante credenciales SSH
     almacenadas como secretos de GitHub
-
 3.  Ejecuta un script de implementación (**deploy.sh**) que organiza el
     proceso de actualización
-
 4.  Actualiza los contenedores en ejecución con un tiempo de inactividad
     mínimo o nulo
 
