@@ -2,12 +2,12 @@
 title: 'DeUser, Microsoft Power Platform, Creación e Impresion de Etiquetas'
 articleUrl: 'DeUser_Practicas_PowerPlatform'
 description: 'En este artículo, hablo sobre la aplicación que desarrolle durante mi periodo de prácticas en DeUser, Realice una aplicacion que automatizaba la creación e impresión de etiquetas para productos, utilizando Microsoft Power Platform.'
-imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fbanner.jpg&version_id=null'
+imageUrl: 'https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/banner.jpg'
 tags: [Power Apps, Power Automate, Microsoft Lists, Sharepoint]
 degree: 'bg-gradient-to-tl to-pink-500 from-blue-500'
 type: 'Full Stack'
 date: '2025-03-24'
-visible: false
+visible: true
 ---
 
 # Introduccion
@@ -19,7 +19,7 @@ almacenes de la empresa, de una forma más rápida y sencilla.
 A continuación, vamos a explicar paso a paso la aplicación, simulando la
 creación de una nueva etiqueta.
 
-![Gift de uso](https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2FGuia-usuario.gif&version_id=null)
+![Gift de uso](https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/Guia-usuario.gif)
 
 # Pantallas de la aplicación
 
@@ -31,7 +31,7 @@ En ella el usuario podrá seleccionar la plantilla sobre la que
 trabajará.
 
 <figure>
-<img jpg size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen1.png&version_id=null" />
+<img jpg size="7" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen1.png" />
 <figcaption><p>Imagen 1. Pantalla "Plantillas"</p></figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ trabajará.
 - **Calibración**:
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen2.png&version_id=null"/>
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen2.png"/>
 <figcaption><p>Imagen 2. Etiqueta calibración</p></figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Esta plantilla incluye los siguientes campos:
 - **Equipo segregado**:
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen3.png&version_id=null"/>
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen3.png"/>
 <figcaption><p>Imagen 3. Etiqueta equipo segregado</p></figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ Esta plantilla incluye los siguientes campos:
 - **Calibración con alguna anomalía**
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen4.png&version_id=null"/>
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen4.png"/>
 <figcaption><p>Imagen 4. Etiqueta calibracion con alguna
 anomalia</p></figcaption>
 </figure>
@@ -111,7 +111,7 @@ Esta plantilla incluye los siguientes campos:
 - **Equipo de uso restringido:**
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen5.png&version_id=null"/>
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen5.png"/>
 <figcaption><p>Imagen 5. Etiqueta equipo de uso
 restringido</p></figcaption>
 </figure>
@@ -137,7 +137,7 @@ Esta plantilla incluye los siguientes campos:
 - **Vida limitada**:
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen6.png&version_id=null"/>
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen6.png"/>
 <figcaption><p>Imagen 6. Etiqueta vida limitada</p></figcaption>
 </figure>
 
@@ -154,7 +154,7 @@ Esta plantilla incluye los siguientes campos:
 - **Producto no conforme**:
 
 <figure>
-<img jpg size="4" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen7.png&version_id=null" />
+<img jpg size="4" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen7.png" />
 <figcaption><p>Imagen 7. Etiqueta de producto no
 conforme</p></figcaption>
 </figure>
@@ -185,7 +185,7 @@ Esta plantilla incluye los siguientes campos:
 - **Producto segregado**:
 
 <figure>
-<img jpg size="4" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen8.png&version_id=null" />
+<img jpg size="4" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen8.png" />
 <figcaption><p>Imagen 8. Etiqueta de producto segregado</p></figcaption>
 </figure>
 
@@ -221,7 +221,7 @@ la etiqueta final.
 También tiene acceso directo a un historial de etiquetas.
 
 <figure>
-<img jpg size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen9.png&version_id=null" />
+<img jpg size="7" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen9.png" />
 <figcaption><p>Imagen 9. Vista general de la pantalla
 crear</p></figcaption>
 </figure>
@@ -240,7 +240,7 @@ En el caso del ejemplo, usaremos la de **Calibración anómalo**.
 Para acceder a la plantilla pulsamos sobre "Usar".
 
 <figure>
-<img jpg size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen10.png&version_id=null"/>
+<img jpg size="7" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen10.png"/>
 <figcaption><p>Imagen 10. Seleccionar plantilla</p></figcaption>
 </figure>
 
@@ -255,7 +255,7 @@ En todos los formularios encontrarás campos como "**Plantilla**" o
 "**Repeticiones**".
 
 <figure>
-<img jpg size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen11.png&version_id=null" />
+<img jpg size="7" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen11.png" />
 <figcaption><p>Imagen 11. Configurar la plantilla</p></figcaption>
 </figure>
 
@@ -277,7 +277,7 @@ pulsa en el siguiente botón. Tras pulsar, se restablecerá el formulario,
 vaciándose todos los campos.
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen12.png&version_id=null" />
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen12.png" />
 <figcaption><p>Imagen 12. Botón para restablecer el
 formulario</p></figcaption>
 </figure>
@@ -289,13 +289,13 @@ debajo del formulario. Este botón nos redirigirá a una pantalla donde
 veremos el resultado de la hipotética impresión.
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen13.png&version_id=null" />
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen13.png" />
 <figcaption><p>Imagen 13. Botón
 previsualizar</p></figcaption>
 </figure>
 
 <figure>
-<img jpg size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen14.png&version_id=null" />
+<img jpg size="7" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen14.png" />
 <figcaption><p>Imagen 14. Vista previa de
 etiquetas</p></figcaption>
 </figure>
@@ -307,12 +307,12 @@ botón "Imprimir" de la parte superior de la pantalla. Esto nos abrirá
 una ventana emergente donde pulsaremos de nuevo en Imprimir.
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen15.png&version_id=null" />
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen15.png" />
 <figcaption><p>Imagen 15. Botón imprimir</p></figcaption>
 </figure>
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen16.png&version_id=null" />
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen16.png" />
 <figcaption><p>Imagen 16. Pestaña emergente previa a
 impresión</p></figcaption>
 </figure>
@@ -321,7 +321,7 @@ Se nos iniciará otra pestaña que generará un PDF listo para enviarlo a
 la impresora cuando el encargado pulse el botón "Imprimir" nuevamente.
 
 <figure>
-<img jpg size="7" size="" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen17.png&version_id=null" />
+<img jpg size="7" size="" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen17.png" />
 <figcaption><p>Imagen 17. Generar pdf</p></figcaption>
 </figure>
 
@@ -333,19 +333,19 @@ emergente a la derecha de la pantalla con todos los elementos creados
 por el usuario en el pasado.
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen18.png&version_id=null"/>
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen18.png"/>
 <figcaption><p>Imagen 18. Botón de historial</p></figcaption>
 </figure>
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen19.png&version_id=null"/>
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen19.png"/>
 <figcaption><p>Imagen 19. Vista general del historial</p></figcaption>
 </figure>
 
 ### Seleccionar elemento del historial
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen20.png&version_id=null"/>
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen20.png"/>
 <figcaption><p>Imagen 20. Elemento historico</p></figcaption>
 </figure>
 
@@ -368,7 +368,7 @@ se mostrará con este nombre: "Guardar nuevo registro". Ya solo faltaría
 rellenar el formulario con nuevos datos y pulsar el siguiente botón.
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen21.png&version_id=null" />
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen21.png" />
 <figcaption><p>Imagen 21. Como deberia verse el botón</p></figcaption>
 </figure>
 
@@ -380,7 +380,7 @@ pantalla emergente, avisando de que se enviará un correo electrónico
 notificando que se ha creado el nuevo registro y algunos de sus datos.
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen22.png&version_id=null" />
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen22.png" />
 <figcaption><p>Imagen 22. vista de la ventana
 emergente</p></figcaption>
 </figure>
@@ -390,7 +390,7 @@ emergente</p></figcaption>
 La siguiente imagen es un ejemplo de correo electrónico
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen23.png&version_id=null" />
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen23.png" />
 <figcaption><p>Imagen 23. Ejemplo de plantilla de respuesta del correo
 electronico</p></figcaption>
 </figure>
@@ -402,13 +402,13 @@ actualizar, el comportamiento del botón cambiará y se titulará:
 "Actualizar registro"
 
 <figure>
-<img jpg size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen24.png&version_id=null" />
+<img jpg size="7" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen24.png" />
 <figcaption><p>Imagen 24. Selección de un registro para
 actualizarlo</p></figcaption>
 </figure>
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen25.png&version_id=null"/>
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen25.png"/>
 <figcaption><p>Imagen 25. Como se debería ver el botón de
 actualizar</p></figcaption>
 </figure>
@@ -419,7 +419,7 @@ Para eliminar un elemento del historial pulsa el botón de la papelera,
 automáticamente se eliminará de la lista el registro seleccionado.
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen26.png&version_id=null" />
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen26.png" />
 <figcaption><p>Imagen 26. Botón eliminar historico</p></figcaption>
 </figure>
 
@@ -430,7 +430,7 @@ hay un ícono de un papel. Al pulsar sobre este, podrás limpiar todos los
 campos del formulario.
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen27.png&version_id=null"/>
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen27.png"/>
 <figcaption><p>Imagen 27. Botón limpiar formulario</p></figcaption>
 </figure>
 
@@ -446,7 +446,7 @@ aplicación a calcular automáticamente la fecha de caducidad
 predeterminada.
 
 <figure>
-<img jpg size="7" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen28.png&version_id=null"/>
+<img jpg size="7" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen28.png"/>
 <figcaption><p>Imagen 28. Vista general de la
 pantalla</p></figcaption>
 </figure>
@@ -456,7 +456,6 @@ pantalla</p></figcaption>
 En la parte del formulario, vamos a rellenar los siguientes campos:
 
 - el nombre del artículo: este nombre no podrá ser uno ya existente.
-
 - el tiempo de duración hasta que caduque el producto. El campo
   **Caducidad** e utiliza para definir el tiempo de vigencia de un
   artículo antes de que caduque. Este valor se ingresa en **formato
@@ -467,11 +466,8 @@ En la parte del formulario, vamos a rellenar los siguientes campos:
 **Formato del campo**
 
 - Se acepta un **número decimal**.
-
 - **1.0** significa **1 año**.
-
 - **0.5** significa **6 meses**.
-
 - **1.2** significa **1 año y 2,4 meses** (1.2 \* 12 = 14.4 meses).
 
 > Nota: Este valor será convertido automáticamente a meses en el cálculo de la fecha de caducidad.
@@ -483,7 +479,6 @@ En la parte del formulario, vamos a rellenar los siguientes campos:
 Si el usuario ingresa:
 
 - duración = 1.5
-
 - El sistema lo interpreta como 1.5 \* 12 = 18 meses.
 
 #### Crear producto
@@ -495,19 +490,19 @@ pulsamos el botón. Esta acción mostrará una ventana emergente de
 confirmación.
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen29.png&version_id=null"/>
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen29.png"/>
 <figcaption><p>Imagen 29. Botón
 Nuevo</p></figcaption>
 </figure>
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen30.png&version_id=null"/>
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen30.png"/>
 <figcaption><p>Imagen 30. Botón
 crear</p></figcaption>
 </figure>
 
 <figure>
-<img jpg size="5" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen31.png&version_id=null"/>
+<img jpg size="5" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen31.png"/>
 <figcaption><p>Imagen 31. ventana
 emergente</p></figcaption>
 </figure>
@@ -521,7 +516,7 @@ pulsarlo, se mostrará una ventana emergente de confirmación antes de
 actualizar definitivamente el producto.
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen32.png&version_id=null"/>
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen32.png"/>
 <figcaption><p>Imagen 32. Botón Actualizar y lista de
 productos</p></figcaption>
 </figure>
@@ -533,7 +528,7 @@ pulsaremos en el botón de la papelera, esto eliminará el producto
 seleccionado.
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen33.png&version_id=null" />
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen33.png" />
 <figcaption><p>Imagen 33. Botón eliminacion producto</p></figcaption>
 </figure>
 
@@ -545,7 +540,7 @@ actualización de la Lista en cuestión. Para ello pulsa en el botón
 "Refrescar" en la parte superior derecha. Esto forzará su actualización
 
 <figure>
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FDeUser_Practicas_PowerPlatform%2Fscreenshots%2FImagen34.png&version_id=null" />
+<img jpg size="6" src="https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/posts/DeUser_Practicas_PowerPlatform/screenshots/Imagen34.png" />
 <figcaption><p>Imagen 34. Botón refrescar la lista de
 productos</p></figcaption>
 </figure>
