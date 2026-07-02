@@ -2,7 +2,7 @@
 title: 'Spring Microservices'
 articleUrl: 'Spring-Microservices'
 description: 'En este proyecto, enfoqué mis esfuerzos en crear una aplicación orientada a microservicios con Spring Boot, dejando atrás la estructura monolítica.'
-imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProyecto%20de%20Microservicios%20en%20Spring%2FPortada.png&version_id=null'
+imageUrl: 'https://s3.minio.hdglabs.com/portfolio/posts/Proyecto%20de%20Microservicios%20en%20Spring/Portada.png'
 tags: [Spring Boot, Docker, Swagger]
 degree: 'bg-white'
 type: 'BackEnd'
@@ -34,7 +34,7 @@ En el desarrollo de software, la arquitectura orientada a microservicios ha gana
 ## Arquitectura
 Para visualizar la estructura de nuestra aplicación, hemos creado un diagrama de arquitectura que muestra la interacción entre los diferentes microservicios y el Gateway, además de Eureka que ayuda a localizar los distintos microservicios de la aplicación para su comunicación.
 
-<img jpg src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FProyecto%20de%20Microservicios%20en%20Spring%2FPortada.png&version_id=null">
+<img jpg src="https://s3.minio.hdglabs.com/portfolio/posts/Proyecto%20de%20Microservicios%20en%20Spring/Portada.png">
 
 <h3 tab="1"> Componentes de la Arquitectura </h3>
 </div tab="2">

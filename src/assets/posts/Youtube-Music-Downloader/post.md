@@ -2,7 +2,7 @@
 title: 'Youtube Music Downloader'
 articleUrl: 'Youtube-Music-Downloader'
 description: 'Un microservicio para descargar música desde YouTube y almacenarla en la nube o localmente.'
-imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FYoutube-Music-Downloader%2Flogo.png&version_id=null'
+imageUrl: 'https://s3.minio.hdglabs.com/portfolio/posts/Youtube-Music-Downloader/logo.png'
 tags: [Spring Boot, Angular, Github Actions, Docker, Swagger]
 degree: 'bg-gradient-to-tr from-cyan-300 via-rose-400 to-indigo-900'
 type: 'FullStack'
@@ -57,7 +57,7 @@ Microservicios
 # Manual de usuario
 A través de la [página web](https://levelcloud-music.vercel.app) desplegada, podrás interactuar con la interfaz, en ella introduciras la url del video o playlist de YouTube que deseas descargar. El microservicio se encargará de procesar la solicitud, descargar el contenido y almacenarlo en tu nube privada o en tu dispositivo local.
 
-![Gift](https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FYoutube-Music-Downloader%2FGuia-usuario.gif&version_id=null)
+![Gift](https://s3.minio.hdglabs.com/portfolio/posts/Youtube-Music-Downloader/Guia-usuario.gif)
 
 # Diagramas
 

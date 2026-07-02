@@ -2,14 +2,14 @@
 title: 'JavaFX Music Player'
 articleUrl: 'JavaFX-Music-Player'
 description: 'Se trata de una aplicación de música hecha en JavaFX, que tiene varias funcionalidades interesantes y quha sido el resultado de un trabajo colaborativo.'
-imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FJavaFX%20Music%20Player%2FJavaFX%20Music%20Player.png&version_id=null'
+imageUrl: 'https://s3.minio.hdglabs.com/portfolio/posts/JavaFX%20Music%20Player/JavaFX%20Music%20Player.png'
 tags: [Angular]
 degree: 'bg-gradient-to-t from-cyan-400 to-blue-500'
 type: 'FullStack'
 date: '2023-11-13'
 ---
 
-<img jpg src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FJavaFX%20Music%20Player%2Fbanner.jpeg&version_id=null">
+<img jpg src="https://s3.minio.hdglabs.com/portfolio/posts/JavaFX%20Music%20Player/banner.jpeg">
 
 # Proyecto de Aplicación de Música en JavaFX
 

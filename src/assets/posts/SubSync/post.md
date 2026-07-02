@@ -2,7 +2,7 @@
 title: 'SubSync: Automatización de descargas musicales'
 articleUrl: 'SubSync'
 description: 'Herramienta CLI para automatizar periodicamente descarga de las ultimas novedades en la industria musical.'
-imageUrl: 'https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSubSync%2Flogo_no_background.png&version_id=null'
+imageUrl: 'https://s3.minio.hdglabs.com/portfolio/posts/SubSync/logo_no_background.png'
 tags: [Python, Docker, Git]
 degree: 'bg-white'
 type: 'BackEnd'
@@ -49,7 +49,7 @@ Esta estructura permite sustituir componentes sin afectar la lógica central: po
 
 El corazón del sistema es el **SchedulerService**, que se encarga de decidir cuándo hay que lanzar un nuevo job de descargas.  
 
-<img jpg size="6" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSubSync%2Fschedule_life_cycle.png&version_id=null">
+<img jpg size="6" src="https://s3.minio.hdglabs.com/portfolio/posts/SubSync/schedule_life_cycle.png">
 
 <br>
 
@@ -168,9 +168,9 @@ Como paso final monté mi propio servidor de música con **Navidrome**:
 
 El resultado es una experiencia similar a Spotify o YouTube Music, pero con **mi colección, mi control y sin depender de servicios externos**.  
 
-<img png="8" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSubSync%2FHome_Preview.png&version_id=null">
+<img png="8" src="https://s3.minio.hdglabs.com/portfolio/posts/SubSync/Home_Preview.png">
 <br>
-<img png size="8" src="https://minio.luishidalgoa.ddns-ip.net/api/v1/buckets/portfolio/objects/download?preview=true&prefix=posts%2FSubSync%2FSong_view.png&version_id=null">
+<img png size="8" src="https://s3.minio.hdglabs.com/portfolio/posts/SubSync/Song_view.png">
 
 ---
 

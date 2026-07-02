@@ -12,7 +12,7 @@ export class ExperienciaComponent {
       puesto: 'Intern Junior Software Developer',
       company: 'DeUser',
       description: 'Durante el periodo de practicas he desarrollado un rol de automatización de procesos internos en la empresa, usando herramientas de la switft de Microsoft 365 como Power Automate, Power Apps y Share Point. He desarrollado una aplicación para crear etiquetas de productos para posteriormente imprimirlas. De esta manera los encargados del almacen podran identificar los productos de manera mas rapida y eficiente.',
-      companyLogo: 'https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/shared/deuser_logo.jpg'
+      companyLogo: 'https://s3.minio.hdglabs.com/portfolio/shared/deuser_logo.jpg'
     },
     {
       startDate: new Date(2024, 3),
@@ -20,7 +20,7 @@ export class ExperienciaComponent {
       puesto: 'Intern Junior Software Developer',
       company: 'Atmira',
       description: 'He formado parte del módulo formativo Acelerate Bootcamp, donde me he capacitado en el uso de la metodología Ágil, control de versiones con Git y tecnologías como Java 8 con Spring Boot y Angular. Durante mi período de prácticas, he participado en el desarrollo de nuevas funcionalidades para una herramienta interna de la empresa (especialmente en el Front con Angular), cuyo trabajo ha sido gratamente valorado.',
-      companyLogo: 'https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/shared/atmira_logo.jpeg'
+      companyLogo: 'https://s3.minio.hdglabs.com/portfolio/shared/atmira_logo.jpeg'
     },
     {
       startDate: new Date(2020, 3, 1),
@@ -28,7 +28,7 @@ export class ExperienciaComponent {
       puesto: 'Técnico informático practicas',
       company: 'Inper Nuevas Tecnologías',
       description: 'Becario en practicas durante la finalizacion de la FP. Medio de sistemas microinformaticos y redes locales.Durante este periodo me especialice como técnico en soluciones informáticas relacionadas con el hardware. Así como realizar instalaciones de red',
-      companyLogo: 'https://s3.minio.luishidalgoa.ddns-ip.net/portfolio/shared/INPER.jpeg'
+      companyLogo: 'https://s3.minio.hdglabs.com/portfolio/shared/INPER.jpeg'
     },
   ]
 
